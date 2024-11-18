@@ -1,0 +1,21 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange-color: #ea5212;
+  --green-color: #458B4A;
+  --dark-color: #333333;
+  --white-color: #fff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6; /* Added for better readability */
+  color: #333; /* Set a default text color */
+  background-color: #f9f9f9; /* Set a default background color */
+}
+

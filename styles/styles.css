@@ -1,0 +1,102 @@
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: var(--white-color);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+    .brand-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .brand {
+      background: var(--white-color);
+      border: 1px solid #e8e8e8;
+      border-radius: 999px;
+      padding: 10px 20px;
+
+      .brand-logo {
+        height: 40px;
+        object-fit: cover;
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-left: 20px;
+      background: white;
+      padding: 10px 20px;
+      border: 1px solid #e8e8e8;
+      border-radius: 99px;
+
+      .nav-link {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: var(--dark-color);
+        padding: 8px 16px;
+        border-radius: 999px;
+        transition: all 0.3s;
+
+        &.active {
+          background-color: var(--green-color);
+          color: white;
+          font-weight: bold;
+        }
+
+        &:hover {
+          background-color: var(--green-color);
+          color: white;
+        }
+      }
+    }
+
+    .contact-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      min-width: 149px;
+      height: 41px;
+      background: transparent;
+      color: var(--green-color);
+      border: 1px solid var(--green-color);
+      border-radius: 8px;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: var(--green-color);
+        color: white;
+      }
+    }
+
+    .menu-bars {
+      background-color: var(--white-color);
+      padding: 10px 20px;
+      border-radius: 999px;
+
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+}
