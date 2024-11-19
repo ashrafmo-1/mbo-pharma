@@ -4,8 +4,6 @@
   left: 0;
   right: 0;
   z-index: 50;
-  background-color: var(--white-color);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
 
   .nav-container {
@@ -99,4 +97,140 @@
       }
     }
   }
+}
+
+/* ----------- hero section ----------- */
+
+/* ----------- about us ----------- */
+
+.images-section {
+  display: flex;
+  align-items: flex-end;
+  .about-image-primary {
+    width: 387px;
+    height: 387px;
+  }
+
+  .about-image-secondary {
+    width: 289px;
+    height: 294px;
+    position: relative;
+    right: -40px;
+    top: 50px;
+  }
+}
+
+/* ----------- products ----------- */
+.products-section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1a1a1a; /* Assuming a dark background for text contrast */
+  .content-wrapper {
+    padding: 6rem 0;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.section-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20.5px;
+  color: #458b4a;
+}
+
+.section-title .highlight {
+  color: #ea5212;
+}
+
+.section-heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fbfcf8;
+  margin-top: 0.5rem;
+}
+
+.section-heading .light-text {
+  font-weight: 100;
+}
+
+.section-heading .orange-dot {
+  color: #ee7541;
+}
+
+.products-gallery {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 3.5rem;
+}
+
+.product-card-small {
+  width: 180px;
+  height: 184px;
+  flex: none;
+  box-sizing: border-box;
+}
+
+.product-image-small {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.product-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #fbfcf8;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.product-card-large {
+  width: 811px;
+  flex: none;
+  box-sizing: border-box;
+}
+
+.product-image-large {
+  width: 100%;
+  height: 366px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pagination-button {
+  background-color: #ea5212;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-button img {
+  width: 30px;
+}
+
+.pagination-button.rotate {
+  transform: rotate(180deg);
 }

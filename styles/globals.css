@@ -7,7 +7,7 @@
 
 :root {
   --orange-color: #ea5212;
-  --green-color: #458B4A;
+  --green-color: #458b4a;
   --dark-color: #333333;
   --white-color: #fff;
 }
@@ -19,3 +19,26 @@ body {
   background-color: #f9f9f9; /* Set a default background color */
 }
 
+.heroSection,
+.products-section {
+  background: url(../public/assets/heroSection.png);
+}
+
+.ProductsSection {
+  background: url(../public/assets/MagicPattern.design.png);
+  background-color: #333;
+}
+
+/* background: url(<path-to-image>)/; */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ea5212;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--background-body);
+}

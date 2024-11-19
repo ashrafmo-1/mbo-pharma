@@ -1,0 +1,51 @@
+<style>
+  .pinned {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .header {
+    box-sizing: border-box;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+  }
+</style>
+
+<div class="navigation-bar" id="header">
+  <div class="nav-container">
+    <div class="brand-links">
+      <!-- Brand Logo -->
+      <div class="brand">
+        <img
+          src="./public/assets/image_5d73f37c.jpeg"
+          alt="Brand"
+          class="brand-logo"
+        />
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="/" class="nav-link active">home</a>
+        <a href="/pages/products.html" class="nav-link">Products</a>
+        <a href="/About-us" class="nav-link">About us</a>
+        <a href="/contact-us" class="nav-link">Contact</a>
+        <a href="/blog" class="nav-link">Blog</a>
+      </div>
+    </div>
+
+    <!-- Contact Us Button -->
+    <button class="contact-button">
+      CONTACT US
+      <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
+    </button>
+
+    <!-- Menu Bars -->
+    <button class="menu-bars">
+      <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
+    </button>
+  </div>
+</div>
