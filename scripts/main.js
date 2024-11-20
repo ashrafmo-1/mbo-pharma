@@ -31,3 +31,4 @@ loadSection("navigation", "../constants/nav.html");
 loadSection("hero", "../home/hero.html");
 loadSection("about", "../home/aboutus.html");
 loadSection("products", "../home/products.html");
+

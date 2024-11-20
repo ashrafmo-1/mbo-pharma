@@ -29,6 +29,21 @@ body {
   background-color: #333;
 }
 
+.pinned {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.header {
+  box-sizing: border-box;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
 /* background: url(<path-to-image>)/; */
 
 ::-webkit-scrollbar {
