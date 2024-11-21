@@ -1,0 +1,46 @@
+<svg
+viewBox="0 0 32 32"
+x="0"
+y="0"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
+<defs>
+  <clipPath
+    id="clip5_5245_1698"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      width="32"
+      height="32"
+      fill="white"
+      transform="translate(0, -0.004100000000107684)"
+    />
+  </clipPath>
+</defs>
+<g
+  id="&lt;Navigator>_2"
+  data-node-id="I5294:2341;2172:4039"
+  clip-path="url(#clip5_5245_1698)"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    id="&lt;Button>_15"
+    data-node-id="I5294:2341;2172:4039;2172:3976"
+  >
+    <g
+      id="Icon / &lt;ChevronRightLargeIcon>"
+      data-node-id="I5294:2341;2172:4039;2172:3976;14432:144915"
+    >
+      <path
+        id="Vector_4"
+        data-node-id="I5294:2341;2172:4039;2172:3976;14432:144915;13200:45354"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M18.995,14.9959c0.187,0.19 0.292,0.44 0.292,0.71c0,0.26 -0.105,0.52 -0.292,0.7l-4.593,4.6c-0.187,0.18 -0.437,0.28 -0.698,0.28c-0.261,0 -0.511,-0.11 -0.695,-0.29c-0.185,-0.19 -0.289,-0.44 -0.29,-0.7c-0.002,-0.26 0.1,-0.51 0.283,-0.69l3.9,-3.9l-3.9,-3.9c-0.183,-0.19 -0.285,-0.44 -0.283,-0.7c0.001,-0.26 0.105,-0.51 0.29,-0.7c0.184,-0.18 0.434,-0.29 0.695,-0.29c0.261,0 0.511,0.1 0.698,0.29z"
+        fill="currentColor"
+      />
+    </g>
+  </g>
+</g>
+</svg>

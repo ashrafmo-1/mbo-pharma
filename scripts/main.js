@@ -27,8 +27,15 @@ function loadSection(elementId, filePath) {
     .catch((error) => console.error(error));
 }
 
-loadSection("navigation", "../constants/nav.html");
-loadSection("hero", "../home/hero.html");
-loadSection("about", "../home/aboutus.html");
-loadSection("products", "../home/products.html");
+// loadSection("navigation", "../constants/nav.html");
+// loadSection("hero", "../home/hero.html");
+// loadSection("about", "../home/aboutus.html");
+// loadSection("products", "../home/products.html");
 
+/* handle nav bar btn */
+const NAVBAR = document.querySelector(".menu-bars");
+
+  NAVBAR.addEventListener("click", () => {
+    const SID_EBAR_RESPONSIVE = document.querySelector(".side-bar-responsive");
+    SID_EBAR_RESPONSIVE.classList.toggle("active"); 
+  });

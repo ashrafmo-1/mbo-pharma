@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/assets/image_5d73f37c.jpeg" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400"
@@ -35,11 +36,11 @@
 
           <!-- Navigation Links -->
           <div class="nav-links">
-            <a href="/" class="nav-link">home</a>
-            <a href="/pages/products.html" class="nav-link">Products</a>
-            <a href="/About-us" class="nav-link">About us</a>
-            <a href="/contact-us" class="nav-link active">Contact</a>
-            <a href="/blog" class="nav-link">Blog</a>
+            <a href="/index.html" class="nav-link">home</a>
+            <a href="/product.html" class="nav-link">Products</a>
+            <a href="/about-us.html" class="nav-link">About us</a>
+            <a href="/contactus.html" class="nav-link active">Contact</a>
+            <a href="/blog.html" class="nav-link">Blog</a>
           </div>
         </div>
 
@@ -76,33 +77,22 @@
                   <div class="min-w-[553px] grow-0 shrink-0 basis-auto box-border">
                     <div class="w-[100.00%] box-border">
                       <!-- name and phone -->
-                      <div
-                        class="flex justify-start items-center flex-row w-[100.00%] box-border"
-                      >
-                        <div
-                          class="flex justify-center items-stretch flex-col grow shrink basis-[0.00]"
-                        >
-                          <p
-                            class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                          >
+                      <div class="flex justify-start items-center flex-row w-[100.00%] box-border">
+                        <div class="flex justify-center items-stretch flex-col grow shrink basis-[0.00]">
+                          <p class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#333333]">
                             Name
                           </p>
                           <div class="grow-0 shrink-0 basis-auto mt-[15px]">
                             <!-- Input Component is detected here -->
-                            <input
-                              placeholder="Brooklyn Simmons"
-                              type="text"
+                            <input placeholder="Brooklyn Simmons" type="text"
                               class="border bg-[#fbfcf8] h-[50px] w-[100.00%] [font-family:Roboto,sans-serif] text-base font-normal box-border pl-3 rounded-sm border-solid border-[#333333] text-[#8e8e8e]"
                             />
                           </div>
                         </div>
-                        <div class="grow shrink basis-[0.00] ml-3.5">
+                        <div class="ml-3.5">
                           <!-- Input with Label Component is detected here -->
-                          <div
-                            class="h-[85px] w-[100.00%] box-border flex-row items-center [justify-content:start] border-[none]"
-                          >
-                            <label
-                              for="phone number"
+                          <div class="h-[85px] w-[100.00%] box-border flex-row items-center [justify-content:start] border-[none]">
+                            <label for="phone number"
                               class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#333333] block mb-[15px]"
                             >
                               Phone Number
@@ -118,24 +108,14 @@
                       </div>
 
                       <!-- email -->
-                      <div class="w-[100.00%] box-border mt-[31px]">
-                        <div
-                          class="h-[85px] w-[100.00%] box-border flex-row items-center [justify-content:start] border-[none]"
-                        >
-                          <label
-                            for="email"
-                            class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#333333] block mb-[15px]"
-                          >
+                        <div class="h-[85px] w-[100.00%] mt-[31px] box-border flex-row items-center [justify-content:start] border-[none]">
+                          <label for="email" class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#333333] block mb-[15px]">
                             Email
                           </label>
-                          <input
-                            id="email"
-                            placeholder="example@mail.com"
-                            type="text"
+                          <input id="email" placeholder="example@mail.com" type="text"
                             class="border h-[50px] w-full box-border bg-[#fbfcf8] [font-family:Roboto,sans-serif] text-base font-normal pl-3 rounded-sm border-solid border-[#333333] text-[#8e8e8e]"
                           />
                         </div>
-                      </div>
 
                       <div class="w-[100.00%] box-border mt-[31px]">
                         <p
@@ -154,28 +134,10 @@
                       </div>
 
                       <div class="w-[100.00%] box-border mt-[31px]">
-                        <p
-                          class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#333333] m-0 p-0"
-                        >
+                        <label for="message" class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#333333] m-0 p-0">
                           Message
-                        </p>
-                        <div
-                          class="rounded border bg-[#fbfcf8] box-border flex justify-start items-start flex-col w-[100.00%] mt-[15px] pl-3 pr-[2.25px] pt-[13px] pb-0.5 border-solid border-[#333333]"
-                        >
-                          <p
-                            class="[font-family:Roboto,sans-serif] text-base font-normal text-[#8e8e8e] grow-0 shrink-0 basis-auto m-0 p-0"
-                          >
-                            Type your message...
-                          </p>
-                          <div
-                            class="self-end grow-0 shrink-0 basis-auto mt-[136px]"
-                          >
-                            <img
-                              src="assets/image_c6fe6c3e.png"
-                              class="h-[7px] max-w-[initial] w-[6.75px] block box-border"
-                            />
-                          </div>
-                        </div>
+                        </label>
+                        <textarea placeholder="" id="message" class="rounded border min-h-[200px] bg-[#fbfcf8] box-border flex justify-start items-start flex-col w-[100.00%] mt-[15px] pl-3 pr-[2.25px] pt-[13px] pb-0.5 border-solid border-[#333333]"></textarea>
                       </div>
                     </div>
                     <!-- Button Component is detected here -->
@@ -376,11 +338,11 @@
           </div>
 
           <div class="social-media-icons flex gap-[12px]">
-            <img src="./assets/Facebook.png" width="25" height="25" alt="" />
-            <img src="./assets/Instagram.png" width="25" height="25" alt="" />
-            <img src="./assets/LinkedIn.png" width="25" height="25" alt="" />
-            <img src="./assets/X.png" width="25" height="25" alt="" />
-            <img src="./assets/Youtube.svg" width="25" height="25" alt="" />
+            <img src="./public/assets/Facebook.png" width="25" height="25" alt="" />
+            <img src="./public/assets/Instagram.png" width="25" height="25" alt="" />
+            <img src="./public/assets/LinkedIn.png" width="25" height="25" alt="" />
+            <img src="./public/assets/X.png" width="25" height="25" alt="" />
+            <img src="./public/assets/Youtube.svg" width="25" height="25" alt="" />
           </div>
         </div>
 

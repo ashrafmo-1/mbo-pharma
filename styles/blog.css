@@ -1,0 +1,15 @@
+@media (max-width: 991px) {
+  .blog-container {
+    width: 98% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog-content-section {
+    flex-direction: column-reverse !important;
+  }
+
+  .blogs-Categories {
+    width: 100%;
+  }
+}

@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/assets/image_5d73f37c.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+   <!--from blog only  -->
+    <link rel="stylesheet" href="./styles/blog.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>MPO Pharma - Innovative Healthcare Solutions</title>
   </head>
+
   <body>
     <!-- nav bar -->
     <div class="navigation-bar" id="header">
@@ -23,151 +27,164 @@
           </div>
 
           <!-- Navigation Links -->
-          <div class="nav-links">
-            <a href="/" class="nav-link active">home</a>
+          <div class="nav-links active">
+            <a href="/index.html" class="nav-link">home</a>
             <a href="/product.html" class="nav-link">Products</a>
             <a href="/about-us.html" class="nav-link">About us</a>
             <a href="/contactus.html" class="nav-link">Contact</a>
-            <a href="/blog" class="nav-link">Blog</a>
-            <!-- <a href="./ar/index.html" class="nav-link">ar</a> -->
+            <a href="/blog.html" class="nav-link active">Blog</a>
           </div>
         </div>
 
         <!-- Contact Us Button -->
-        <button class="contact-button">
+        <button class="contact-button outline-none">
           CONTACT US
           <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
         </button>
 
         <!-- Menu Bars -->
-        <!-- <button class="menu-bars">
-              <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
-            </button> -->
+        <button class="menu-bars">
+          <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
+        </button>
+
+
+        <!-- side bar -->
+        <div class="side-bar-responsive bg-[#FFFFFF] flex gap-[16px] flex-col h-[100vh] text-[32px] w-[300px] absolute top-0 left-[-320px] py-[32px] px-[50px]">
+          <a href="/index.html" class="text-[#BBB] nav-link capitalize">home</a>
+          <a href="/product.html" class="text-[#BBB] nav-link capitalize">Products</a>
+          <a href="/about-us.html" class="text-[#BBB] nav-link capitalize">About us</a>
+          <a href="/contactus.html" class="text-[#BBB] nav-link capitalize">Contact</a>
+          <a href="/blog.html" class="text-[#166E1D] nav-link capitalize">Blog</a>
+          <button class="contact-button-side outline-none">
+            CONTACT US
+            <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
+          </button>
+
+        </div>
+
       </div>
     </div>
 
-    <!--  -->
+    <!-- blogs page -->
     <div>
       <div class="bg-[#fbfcf8]">
-        <div class="flex justify-start items-center flex-col w-4/5 m-auto">
+        <div class="blog-container flex justify-start items-center flex-col w-4/5 m-auto">
           <div class="pt-8 pb-24">
             <div class="flex justify-start items-center flex-col mt-32">
               <div>
-                <p
-                  class="[font-family:Montserrat,sans-serif] text-6xl font-bold text-left leading-[72px] uppercase text-[#333333] max-w-[845px] box-border"
-                >
-                  <span>Professional Insights: </span
-                  ><span
-                    class="[font-family:Montserrat,sans-serif] text-6xl font-normal text-left leading-[72px] uppercase"
-                    >News</span
-                  >
-                  <span> </span
-                  ><span
-                    class="[font-family:Montserrat,sans-serif] text-6xl font-bold text-[#ea5212] text-left leading-[72px] uppercase"
-                    >&amp;</span
-                  ><span> Articles</span>
-                  <span
-                    class="[font-family:Montserrat,sans-serif] text-6xl font-bold text-[#ea5212] text-left leading-[72px] uppercase"
-                    >.</span
-                  >
+                <!-- main constant title -->
+                <p class="main-title [font-family:Montserrat,sans-serif] text-6xl font-bold text-left leading-[72px] uppercase text-[#333333] max-w-[845px] box-border">
+                  <span>Professional Insights: </span>
+                  <span class="font-normal">News</span>
+                  <span></span>
+                  <span class="text-[#ea5212]">&amp;</span>
+                  <span> Articles<span class="text-[#ea5212]">.</span></span>
                 </p>
+                <!-- blogs content -->
+                <div class="blog-content-section flex justify-start items-start gap-[20px] flex-row box-border mt-12">
 
-                <div
-                  class="flex justify-start items-start flex-row box-border mt-12"
-                >
-                  <div class="">
-                    <div
-                      class="bg-[white] box-border flex justify-start items-stretch flex-col w-[100.00%] rounded-xl border-2 border-solid border-[#e8e8e8] first:mt-0 mt-[24.00px]"
-                    >
-                      <div
-                        class="bg-cover bg-no-repeat box-border flex justify-start items-center flex-col grow-0 shrink-0 basis-auto pl-[719px] pt-4 pb-[330px]"
-                      >
-                        <div class="">
-                          <div
-                            class="bg-[white] box-border flex justify-start items-center flex-col w-[60px] pt-3.5 pb-[13px] rounded-lg"
-                          >
-                            <p
-                              class="[font-family:Montserrat,sans-serif] text-2xl font-semibold leading-[29px] text-[#333333] m-0 p-0"
-                            >
-                              27
-                            </p>
-                            <p
-                              class="[font-family:Roboto,sans-serif] text-sm font-normal text-[#333333] mt-1.5 m-0 p-0"
-                            >
-                              Jun
-                            </p>
+                <div class="flex flex-col gap-[20px]">
+                  <div class="bg-[white] box-border relative flex justify-start flex-col rounded-xl border-2 border-solid border-[#e8e8e8]">
+                      <img src="./public/assets/image1.png" class=" rounded-lg" alt="image1" loading="lazy">
+                      <div class="bg-cover bg-no-repeat  box-border flex justify-start items-center flex-col pt-4">
+                          <div class="bg-[white] absolute top-[16px] right-[16px] box-border flex justify-start items-center flex-col w-[60px] py-2 rounded-lg">
+                            <p class="[font-family:Montserrat,sans-serif] text-2xl font-semibold leading-[29px] text-[#333333]">27</p>
+                            <p class="[font-family:Roboto,sans-serif] text-sm font-normal text-[#333333]">Jun</p>
                           </div>
-                        </div>
                       </div>
-                      <div
-                        class="box-border flex justify-center items-stretch flex-col pt-11 pb-6 px-[23px]"
-                      >
-                        <p
-                          class="[font-family:Montserrat,sans-serif] text-[35px] font-semibold leading-[42px] text-[#333333] p-0 m-0"
-                        >
+                      <div class="box-border flex justify-center items-stretch flex-col pt-11 pb-6 px-[23px]">
+                        <p class="[font-family:Montserrat,sans-serif] text-[35px] font-semibold leading-[42px] text-[#333333] p-0 m-0">
                           Sunt ab esse quo vel minima.
                         </p>
-                        <p
-                          class="[font-family:Roboto,sans-serif] text-lg font-normal text-left leading-[21.5px] text-[#777777] mt-[15.5px] m-0 p-0"
-                        >
+                        <p class="[font-family:Roboto,sans-serif] text-lg font-normal text-left leading-[21.5px] text-[#777777] mt-[15.5px] m-0 p-0" >
                           Qui veritatis quo non nostrum eveniet consequaturQui
                           veritatis quo non nostrum eveniet consequatur..
                         </p>
-                        <p
-                          class="[font-family:Roboto,sans-serif] text-lg font-normal text-[#166e1d] mt-3 m-0 p-0"
-                        >
+                        <p class="[font-family:Roboto,sans-serif] cursor-pointer text-lg font-normal text-[#166e1d] mt-3">
                           Read more
                         </p>
                       </div>
-                    </div>
                   </div>
+                  <div class="bg-[white] box-border relative flex justify-start flex-col rounded-xl border-2 border-solid border-[#e8e8e8]">
+                      <img src="./public/assets/image1.png" class=" rounded-lg" alt="image1" loading="lazy">
+                      <div class="bg-cover bg-no-repeat  box-border flex justify-start items-center flex-col pt-4">
+                          <div class="bg-[white] absolute top-[16px] right-[16px] box-border flex justify-start items-center flex-col w-[60px] py-2 rounded-lg">
+                            <p class="[font-family:Montserrat,sans-serif] text-2xl font-semibold leading-[29px] text-[#333333]">27</p>
+                            <p class="[font-family:Roboto,sans-serif] text-sm font-normal text-[#333333]">Jun</p>
+                          </div>
+                      </div>
+                      <div class="box-border flex justify-center items-stretch flex-col pt-11 pb-6 px-[23px]">
+                        <p class="[font-family:Montserrat,sans-serif] text-[35px] font-semibold leading-[42px] text-[#333333] p-0 m-0">
+                          Sunt ab esse quo vel minima.
+                        </p>
+                        <p class="[font-family:Roboto,sans-serif] text-lg font-normal text-left leading-[21.5px] text-[#777777] mt-[15.5px] m-0 p-0" >
+                          Qui veritatis quo non nostrum eveniet consequaturQui
+                          veritatis quo non nostrum eveniet consequatur..
+                        </p>
+                        <p class="[font-family:Roboto,sans-serif] cursor-pointer text-lg font-normal text-[#166e1d] mt-3">
+                          Read more
+                        </p>
+                      </div>
+                  </div>
+                  <div class="bg-[white] box-border relative flex justify-start flex-col rounded-xl border-2 border-solid border-[#e8e8e8]">
+                      <img src="./public/assets/image1.png" class=" rounded-lg" alt="image1" loading="lazy">
+                      <div class="bg-cover bg-no-repeat  box-border flex justify-start items-center flex-col pt-4">
+                          <div class="bg-[white] absolute top-[16px] right-[16px] box-border flex justify-start items-center flex-col w-[60px] py-2 rounded-lg">
+                            <p class="[font-family:Montserrat,sans-serif] text-2xl font-semibold leading-[29px] text-[#333333]">27</p>
+                            <p class="[font-family:Roboto,sans-serif] text-sm font-normal text-[#333333]">Jun</p>
+                          </div>
+                      </div>
+                      <div class="box-border flex justify-center items-stretch flex-col pt-11 pb-6 px-[23px]">
+                        <p class="[font-family:Montserrat,sans-serif] text-[35px] font-semibold leading-[42px] text-[#333333] p-0 m-0">
+                          Sunt ab esse quo vel minima.
+                        </p>
+                        <p class="[font-family:Roboto,sans-serif] text-lg font-normal text-left leading-[21.5px] text-[#777777] mt-[15.5px] m-0 p-0" >
+                          Qui veritatis quo non nostrum eveniet consequaturQui
+                          veritatis quo non nostrum eveniet consequatur..
+                        </p>
+                        <p class="[font-family:Roboto,sans-serif] cursor-pointer text-lg font-normal text-[#166e1d] mt-3">
+                          Read more
+                        </p>
+                      </div>
+                  </div>
+                  <div class="bg-[white] box-border relative flex justify-start flex-col rounded-xl border-2 border-solid border-[#e8e8e8]">
+                      <img src="./public/assets/image1.png" class=" rounded-lg" alt="image1" loading="lazy">
+                      <div class="bg-cover bg-no-repeat  box-border flex justify-start items-center flex-col pt-4">
+                          <div class="bg-[white] absolute top-[16px] right-[16px] box-border flex justify-start items-center flex-col w-[60px] py-2 rounded-lg">
+                            <p class="[font-family:Montserrat,sans-serif] text-2xl font-semibold leading-[29px] text-[#333333]">27</p>
+                            <p class="[font-family:Roboto,sans-serif] text-sm font-normal text-[#333333]">Jun</p>
+                          </div>
+                      </div>
+                      <div class="box-border flex justify-center items-stretch flex-col pt-11 pb-6 px-[23px]">
+                        <p class="[font-family:Montserrat,sans-serif] text-[35px] font-semibold leading-[42px] text-[#333333] p-0 m-0">
+                          Sunt ab esse quo vel minima.
+                        </p>
+                        <p class="[font-family:Roboto,sans-serif] text-lg font-normal text-left leading-[21.5px] text-[#777777] mt-[15.5px] m-0 p-0" >
+                          Qui veritatis quo non nostrum eveniet consequaturQui
+                          veritatis quo non nostrum eveniet consequatur..
+                        </p>
+                        <p class="[font-family:Roboto,sans-serif] cursor-pointer text-lg font-normal text-[#166e1d] mt-3">
+                          Read more
+                        </p>
+                      </div>
+                  </div>
+                </div>
 
                   <!-- right controles status & Latest -->
-                  <div
-                    class="border bg-[white] box-border flex justify-start items-stretch flex-col gap-[31px] grow-0 shrink basis-[388px] ml-8 pt-[39px] px-[23px] rounded-lg border-solid border-[#e8e8e8]"
-                  >
-                    <div class="grow-0 shrink-0 basis-auto">
+                  <div class="blogs-Categories border bg-[white] box-border flex justify-start items-stretch flex-col gap-[31px] pt-[39px] px-[23px] rounded-lg border-solid border-[#e8e8e8]">
+                    <div class="">
                       <!-- Input Component is detected here -->
-                      <div
-                        class="border bg-[#fbfcf8] h-[50px] w-[100.00%] box-border flex flex-row items-center [justify-content:start] rounded-sm border-solid border-[#333333]"
-                      >
-                        <input
-                          placeholder="Search"
-                          type="text"
+                      <div  class="border bg-[#fbfcf8] h-[50px] box-border flex flex-row items-center [justify-content:start] rounded-sm border-solid border-[#333333]">
+                        <input placeholder="Search" type="text"
                           class="w-full [font-family:Roboto,sans-serif] text-base font-normal bg-transparent [outline:none] box-border ml-3 border-[none] text-[#8e8e8e]"
                         />
-                        <div
-                          class="w-6 h-6 text-[#333333] flex mr-[13px] my-[13px]"
-                        >
-                          <svg
-                            viewBox="0 0 24 24"
-                            x="0"
-                            y="0"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <g
-                              id="Icon / &lt;SearchIcon>"
-                              data-node-id="I5245:2350;2179:5994"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                id="Vector_2"
-                                data-node-id="I5245:2350;2179:5994;158:881"
-                                fill-rule="evenodd"
-                                clip-rule="evenodd"
-                                d="M16.44,15.085l3.94,4.01c0.17,0.191 0.27,0.443 0.26,0.703c0,0.259 -0.11,0.507 -0.3,0.689c-0.18,0.182 -0.43,0.285 -0.69,0.287c-0.26,0.002 -0.51,-0.097 -0.7,-0.277l-3.94,-4.006c-1.52,1.145 -3.41,1.669 -5.31,1.467c-1.89,-0.202 -3.63,-1.115 -4.88,-2.554c-1.24,-1.44 -1.89,-3.298 -1.81,-5.199c0.07,-1.901 0.87,-3.702 2.22,-5.039c1.35,-1.338 3.16,-2.11 5.06,-2.163c1.91,-0.052 3.76,0.621 5.18,1.882c1.43,1.26 2.32,3.015 2.5,4.909c0.18,1.894 -0.37,3.785 -1.53,5.291zM10.5,16c1.46,0 2.86,-0.579 3.89,-1.611c1.03,-1.031 1.61,-2.43 1.61,-3.889c0,-1.459 -0.58,-2.858 -1.61,-3.889c-1.03,-1.032 -2.43,-1.611 -3.89,-1.611c-1.46,0 -2.86,0.579 -3.89,1.611c-1.03,1.031 -1.61,2.43 -1.61,3.889c0,1.459 0.58,2.858 1.61,3.889c1.03,1.032 2.43,1.611 3.89,1.611z"
-                                fill="currentColor"
-                              />
-                            </g>
-                          </svg>
+                        <div class="w-6 h-6 text-[#333333] flex mr-[13px] my-[13px]">
+                          <img src="./public/icons/search.svg" alt="">
                         </div>
                       </div>
                     </div>
-                    <div class="grow-0 shrink-0 basis-auto">
-                      <p
-                        class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] uppercase text-[#333333] m-0 p-0"
-                      >
+                    <div class="">
+                      <p class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] uppercase text-[#333333]">
                         Categories
                       </p>
                       <div class="flex justify-center items-stretch flex-col gap-4 box-border mt-4"
@@ -206,82 +223,46 @@
                         </div>
                       </div>
                     </div>
-                    <div class="grow-0 shrink-0 basis-auto">
-                      <p
-                        class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] uppercase text-[#333333] m-0 p-0"
-                      >
+                    <div class="">
+                      <p class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] uppercase text-[#333333] m-0 p-0">
                         Latest posts
                       </p>
-                      <div class="w-[100.00%] box-border mt-4">
-                        <!-- Repeated elements detected. These are rendered using loops & conditions in the React tab -->
-                        <div
-                          class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[85px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]"
-                        >
-                          <img
-                            class="rounded h-[69px] max-w-[initial] object-cover w-[85px] box-border block border-[none]"
-                            src="assets/image_8e4a638b.png"
-                          />
+                      <div class="w-[100.00%] box-border my-4">
+                        <div class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[85px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]">
+                          <img class="rounded h-[69px] max-w-[initial] object-cover w-[85px] box-border block border-[none]" src="./public/assets/Frame 239.png" />
                           <div class="grow-0 shrink basis-auto ml-[7px] py-2">
-                            <div
-                              class="bg-[rgba(51,51,51,0.04)] box-border flex justify-start items-center flex-col w-[35px] rounded-[999px]"
-                            >
-                              <p
-                                class="[font-family:Roboto,sans-serif] text-[8px] font-normal text-[#333333] whitespace-pre-wrap grow-0 shrink-0 basis-auto m-0 p-0"
-                              >
+                            <div class="bg-[rgba(51,51,51,0.04)] box-border flex justify-start items-center flex-col w-[35px] rounded-[999px]">
+                              <p class="[font-family:Roboto,sans-serif] text-[8px] font-normal text-[#333333] m-0 p-0">
                                 Ui Ux
                               </p>
                             </div>
-                            <p
-                              class="[font-family:Roboto,sans-serif] text-lg font-medium text-left leading-[27px] text-[#333333] whitespace-pre-wrap w-[100.00%] box-border mt-[3px] m-0 p-0"
-                            >
+                            <p class="[font-family:Roboto,sans-serif] text-lg font-medium text-left leading-[27px] text-[#333333] w-[100.00%] mt-[3px] m-0 p-0">
                               Occaecati ea doloremque nemo ipsa.
                             </p>
                           </div>
                         </div>
-                        <div
-                          class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[85px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]"
-                        >
-                          <img
-                            class="rounded h-[69px] max-w-[initial] object-cover w-[85px] box-border block border-[none]"
-                            src="assets/image_8e4a638b.png"
-                          />
+                        <div class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[85px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]">
+                          <img class="rounded h-[69px] max-w-[initial] object-cover w-[85px] border-[none]" src="./public/assets/Frame 239.png" />
                           <div class="grow-0 shrink basis-auto ml-[7px] py-2">
-                            <div
-                              class="bg-[rgba(51,51,51,0.04)] box-border flex justify-start items-center flex-col w-[35px] rounded-[999px]"
-                            >
-                              <p
-                                class="[font-family:Roboto,sans-serif] text-[8px] font-normal text-[#333333] whitespace-pre-wrap grow-0 shrink-0 basis-auto m-0 p-0"
-                              >
+                            <div class="bg-[rgba(51,51,51,0.04)] box-border flex justify-start items-center flex-col w-[35px] rounded-[999px]">
+                              <p class="[font-family:Roboto,sans-serif] text-[8px] font-normal text-[#333333]">
                                 Ui Ux
                               </p>
                             </div>
-                            <p
-                              class="[font-family:Roboto,sans-serif] text-lg font-medium text-left leading-[27px] text-[#333333] whitespace-pre-wrap w-[100.00%] box-border mt-[3px] m-0 p-0"
-                            >
+                            <p class="[font-family:Roboto,sans-serif] text-lg font-medium text-left leading-[27px] text-[#333333] box-border mt-[3px]">
                               Occaecati ea doloremque nemo ipsa.
                             </p>
                           </div>
                         </div>
-                        <div
-                          class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[85px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]"
-                        >
-                          <img
-                            class="rounded h-[69px] max-w-[initial] object-cover w-[85px] box-border block border-[none]"
-                            src="assets/image_8e4a638b.png"
-                          />
+                        <div class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[85px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]">
+                          <img class="rounded h-[69px] max-w-[initial] object-cover w-[85px] box-border block border-[none]"src="./public/assets/Frame 239.png" />
                           <div class="grow-0 shrink basis-auto ml-[7px] py-2">
-                            <div
-                              class="bg-[rgba(51,51,51,0.04)] box-border flex justify-start items-center flex-col w-[35px] rounded-[999px]"
-                            >
-                              <p
-                                class="[font-family:Roboto,sans-serif] text-[8px] font-normal text-[#333333] whitespace-pre-wrap grow-0 shrink-0 basis-auto m-0 p-0"
-                              >
+                            <div class="bg-[rgba(51,51,51,0.04)] box-border flex justify-start items-center flex-col w-[35px] rounded-[999px]">
+                              <p class="[font-family:Roboto,sans-serif] text-[8px] font-normal text-[#333333]">
                                 Ui Ux
                               </p>
                             </div>
-                            <p
-                              class="[font-family:Roboto,sans-serif] text-lg font-medium text-left leading-[27px] text-[#333333] whitespace-pre-wrap w-[100.00%] box-border mt-[3px] m-0 p-0"
-                            >
+                            <p class="[font-family:Roboto,sans-serif] text-lg font-medium text-left leading-[27px] text-[#333333] mt-[3px] m-0 p-0">
                               Occaecati ea doloremque nemo ipsa.
                             </p>
                           </div>
@@ -289,191 +270,30 @@
                       </div>
                     </div>
                   </div>
+                  <!-- right controles status & Latest -->
                 </div>
               </div>
               <!-- pagination -->
-              <div
-                class="rounded border bg-[white] box-border flex justify-start items-center flex-row grow-0 shrink-0 basis-auto mt-24 border-solid border-[#e8e8e8]"
-              >
-                <div
-                  class="w-8 h-8 text-[#091e42] flex grow-0 shrink-0 basis-auto"
-                >
-                  <svg
-                    viewBox="0 0 32 32"
-                    x="0"
-                    y="0"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      <clipPath
-                        id="clip4_5245_1698"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          width="32"
-                          height="32"
-                          fill="white"
-                          transform="translate(0, -0.004100000000107684)"
-                        />
-                      </clipPath>
-                    </defs>
-                    <g
-                      id="&lt;Navigator>"
-                      data-node-id="I5294:2341;2172:4023"
-                      clip-path="url(#clip4_5245_1698)"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g
-                        id="&lt;Button>"
-                        data-node-id="I5294:2341;2172:4023;2172:3984"
-                      >
-                        <g
-                          id="&lt;Icon>"
-                          data-node-id="I5294:2341;2172:4023;2172:3984;14432:144915"
-                        >
-                          <path
-                            id="Vector_3"
-                            data-node-id="I5294:2341;2172:4023;2172:3984;14432:144915;13200:44812"
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M13.006,14.9959l4.593,-4.59c0.091,-0.1 0.2,-0.17 0.321,-0.22c0.12,-0.05 0.25,-0.08 0.381,-0.08c0.131,0 0.26,0.02 0.381,0.07c0.121,0.05 0.231,0.13 0.324,0.22c0.092,0.09 0.166,0.2 0.215,0.32c0.05,0.12 0.075,0.25 0.075,0.38c-0.001,0.13 -0.028,0.26 -0.079,0.38c-0.05,0.13 -0.125,0.23 -0.218,0.33l-3.9,3.9l3.9,3.9c0.182,0.18 0.284,0.43 0.283,0.69c-0.002,0.26 -0.106,0.51 -0.29,0.7c-0.185,0.18 -0.435,0.29 -0.695,0.29c-0.261,0 -0.512,-0.1 -0.698,-0.28l-4.593,-4.6c-0.188,-0.18 -0.293,-0.44 -0.293,-0.7c0,-0.27 0.105,-0.52 0.293,-0.71z"
-                            fill="currentColor"
-                            fill-opacity="0.31"
-                          />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
+              <div class="rounded border bg-[white] box-border flex justify-start items-center flex-row mt-24 border-solid border-[#e8e8e8]">
+                <div class="w-8 h-8 text-[#091e42] flex ">
+                  <img src="./public/icons/iconright.svg" alt="">
                 </div>
-                <div
-                  class="flex justify-start items-center flex-row grow-0 shrink-0 basis-auto"
-                >
-                  <span
-                    class="bg-[#e8f1e8] [font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#166e1d] inline-flex items-center justify-center h-8 box-border grow-0 shrink-0 basis-auto px-[11px] py-0 rounded-sm border-[none]"
-                    >1</span
-                  >
-                  <div
-                    class="flex justify-start items-center flex-row gap-[22px] grow-0 shrink-0 basis-auto ml-[11px]"
-                  >
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      2
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      3
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      4
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      5
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      6
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      7
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      8
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      9
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      10
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      11
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      12
-                    </p>
-                    <p
-                      class="[font-family:SF_Pro,-apple-system,system-ui,BlinkMacSystemFont,sans-serif] text-sm font-normal text-[#172b4d] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      ...
-                    </p>
-                    <p
-                      class="[font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#333333] grow-0 shrink-0 basis-auto m-0 p-0"
-                    >
-                      20
-                    </p>
+                <div class="flex justify-start items-center flex-row ">
+                  <span class="bg-[#e8f1e8] [font-family:Montserrat,sans-serif] text-sm font-semibold leading-[17px] text-[#166e1d] inline-flex items-center justify-center h-8 box-border  px-[11px] py-0 rounded-sm border-[none]">1</span>
+                  <div class="flex justify-start items-center flex-row gap-[22px] ml-[11px]">
+                    <p class="text-sm font-semibold leading-[17px] text-[#333333]">2</p>
+                    <p class="text-sm font-semibold leading-[17px] text-[#333333]">3</p>
+                    <p class="text-sm font-semibold leading-[17px] text-[#333333]">4</p>
+                    <p class="text-sm font-semibold leading-[17px] text-[#333333]">5</p>
+                    <p class="text-sm font-normal text-[#172b4d]">...</p>
+                    <p class="text-sm font-semibold leading-[17px] text-[#333333]">20</p>
                   </div>
                 </div>
-                <div
-                  class="w-8 h-8 text-[#333333] flex grow-0 shrink-0 basis-auto ml-[11px]"
-                >
-                  <svg
-                    viewBox="0 0 32 32"
-                    x="0"
-                    y="0"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <defs>
-                      <clipPath
-                        id="clip5_5245_1698"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          width="32"
-                          height="32"
-                          fill="white"
-                          transform="translate(0, -0.004100000000107684)"
-                        />
-                      </clipPath>
-                    </defs>
-                    <g
-                      id="&lt;Navigator>_2"
-                      data-node-id="I5294:2341;2172:4039"
-                      clip-path="url(#clip5_5245_1698)"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <g
-                        id="&lt;Button>_15"
-                        data-node-id="I5294:2341;2172:4039;2172:3976"
-                      >
-                        <g
-                          id="Icon / &lt;ChevronRightLargeIcon>"
-                          data-node-id="I5294:2341;2172:4039;2172:3976;14432:144915"
-                        >
-                          <path
-                            id="Vector_4"
-                            data-node-id="I5294:2341;2172:4039;2172:3976;14432:144915;13200:45354"
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M18.995,14.9959c0.187,0.19 0.292,0.44 0.292,0.71c0,0.26 -0.105,0.52 -0.292,0.7l-4.593,4.6c-0.187,0.18 -0.437,0.28 -0.698,0.28c-0.261,0 -0.511,-0.11 -0.695,-0.29c-0.185,-0.19 -0.289,-0.44 -0.29,-0.7c-0.002,-0.26 0.1,-0.51 0.283,-0.69l3.9,-3.9l-3.9,-3.9c-0.183,-0.19 -0.285,-0.44 -0.283,-0.7c0.001,-0.26 0.105,-0.51 0.29,-0.7c0.184,-0.18 0.434,-0.29 0.695,-0.29c0.261,0 0.511,0.1 0.698,0.29z"
-                            fill="currentColor"
-                          />
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
+                <div class="w-8 h-8 text-[#333333] flex  ml-[11px]">
+                  <img src="./public/icons/iconl.svg" alt="">
                 </div>
               </div>
+              <!-- pagination -->
             </div>
           </div>
         </div>
@@ -508,11 +328,11 @@
           </div>
 
           <div class="social-media-icons flex gap-[12px]">
-            <img src="./assets/Facebook.png" width="25" height="25" alt="" />
-            <img src="./assets/Instagram.png" width="25" height="25" alt="" />
-            <img src="./assets/LinkedIn.png" width="25" height="25" alt="" />
-            <img src="./assets/X.png" width="25" height="25" alt="" />
-            <img src="./assets/Youtube.svg" width="25" height="25" alt="" />
+            <img src="./public/assets/Facebook.png" width="25" height="25" alt="" />
+            <img src="./public/assets/Instagram.png" width="25" height="25" alt="" />
+            <img src="./public/assets/LinkedIn.png" width="25" height="25" alt="" />
+            <img src="./public/assets/X.png" width="25" height="25" alt="" />
+            <img src="./public/assets/Youtube.svg" width="25" height="25" alt="" />
           </div>
         </div>
 
@@ -586,7 +406,7 @@
         </div>
       </div>
     </div>
-    <!--  -->
+    <!-- footer -->
     <script src="./scripts/main.js"></script>
   </body>
 </html>
