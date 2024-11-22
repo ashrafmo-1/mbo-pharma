@@ -1,0 +1,23 @@
+<svg
+viewBox="0 0 24 24"
+x="0"
+y="0"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+>
+<g
+  id="Clock"
+  data-node-id="5325:4685"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    id="Icon"
+    data-node-id="I5325:4685;7758:11285"
+    d="M12,6v6l4,2M22,12c0,5.523 -4.477,10 -10,10c-5.523,0 -10,-4.477 -10,-10c0,-5.523 4.477,-10 10,-10c5.523,0 10,4.477 10,10z"
+    stroke="#333333"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</g>
+</svg>

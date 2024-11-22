@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* not used */
 :root {
   --orange-color: #ea5212;
   --green-color: #458b4a;
@@ -22,7 +23,9 @@ body {
 .heroSection,
 .products-section,
 .product-information-page,
-.blog-information {
+.blog-information,
+.career-details-page,
+.FAQ {
   background: url(../public/assets/heroSection.png);
 }
 
@@ -60,9 +63,7 @@ body {
   }
 }
 
-
-
-/*  */
+/* scroll bar */
 ::-webkit-scrollbar {
   width: 8px;
 }

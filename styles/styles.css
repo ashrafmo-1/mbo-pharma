@@ -153,3 +153,26 @@
     top: 50px;
   }
 }
+
+
+/* career-details-page */
+@media (max-width: 420px) {
+  .location, .calendar, .salary, .time {
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-around;
+  }
+}
+
+/*! FAQ */
+.FAQ {
+  .hidden {
+    display: none;
+    transition: 1s;
+  }
+  
+  .visible {
+    display: block;
+    transition: 1s;
+  }
+}
