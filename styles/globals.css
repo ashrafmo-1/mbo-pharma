@@ -20,7 +20,9 @@ body {
 }
 
 .heroSection,
-.products-section, .product-information-page {
+.products-section,
+.product-information-page,
+.blog-information {
   background: url(../public/assets/heroSection.png);
 }
 
