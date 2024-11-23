@@ -4,18 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./public/assets/image_5d73f37c.jpeg" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"/>
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,7 +14,7 @@
   </head>
   <body>
 
-    <div class="navigation-bar" id="header">
+    <section class="navigation-bar" id="header">
       <div class="nav-container">
         <div class="brand-links">
           <!-- Brand Logo -->
@@ -52,66 +43,117 @@
         </button>
 
         <!-- Menu Bars -->
-        <!-- <button class="menu-bars">
-            <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
-          </button> -->
+        <button class="menu-bars">
+          <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
+        </button>
+
+        <!-- side bar -->
+        <div
+          class="side-bar-responsive bg-[#FFFFFF] flex gap-[16px] flex-col h-[100vh] text-[32px] w-[300px] absolute top-0 left-[-320px] py-[32px] px-[50px]"
+        >
+          <a href="/index.html" class="text-[#BBB] nav-link capitalize"
+            >home</a
+          >
+          <a href="/product.html" class="text-[#166E1D] nav-link capitalize"
+            >Products</a
+          >
+          <a href="/about-us.html" class="text-[#BBB] nav-link capitalize"
+            >About us</a
+          >
+          <a href="/contactus.html" class="text-[#BBB] nav-link capitalize"
+            >Contact</a
+          >
+          <a href="/blog.html" class="text-[#BBB] nav-link capitalize">Blog</a>
+          <button class="contact-button-side outline-none">
+            CONTACT US
+            <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- products -->
-    <div class="bg-[#fbfcf8]">
-      <div class="w-4/5 m-auto">
-        <div class="box-border flex justify-start items-center">
-          <div class="box-border pt-8 pb-24">
+    <section class="products-page">
+      <div class="w-10/11 sm:w-4/5 m-auto">
+        <div>
+          <div class="pt-8 pb-24">
             <div class="flex justify-start items-stretch flex-col box-border mt-32">
-              <div class="">
-                
+              <div>
+
                 <!--? title -->
                 <h2 class="main-title [font-family:Montserrat,sans-serif] text-6xl font-bold text-left leading-[72px] uppercase text-[#333333] max-w-[609px]">
                   <span>Browse </span>
                   <span class="text-[#ea5212]">All</span>
                   <span class="font-normal">Our</span>
-                  <span> Products</span>
-                  <span class="text-[#ea5212] leading-[72px]">.</span>
+                  <span> Products</span><span class="text-[#ea5212] leading-[72px]">.</span>
                 </h2>
                 <!--? title -->
 
 
                 <!--? fillter -->
-                <div class="flex justify-center items-stretch flex-col w-[100.00%] box-border mt-12">
-                  <div class="btns-controllers border border-[#E8E8E8] border-solid bg-white rounded-full flex flex-row justify-center items-center w-[330px] ml-auto py-[8px] px-[24px] gap-[16px] mb-[48px]">
-                    <div class="w-[27.14%]  box-border pr-[15.5px]">
-                      <div class="bg-[#166e1d] box-border flex justify-center items-stretch flex-col h-8 px-[15px] rounded-[999px]">
-                        <p class="[font-family:'Open_Sans',sans-serif] text-base font-normal leading-4 text-[white] ">All</p>
-                      </div>
-                    </div>
-                    <p class="[font-family:'Open_Sans',sans-serif] font-normal leading-4 text-[#333333] w-[39.52%] px-[15.5px]">Type 1</p>
-                    <div class="flex justify-start items-end flex-col w-[33.33%]  box-border px-[15px]">
-                      <p class="[font-family:'Open_Sans',sans-serif] text-base font-normal leading-4 text-[#333333] ">Type 2</p>
-                    </div>
+                <div class="btns-controllers border border-[#E8E8E8] mt-12 bg-white rounded-[999px] flex flex-row justify-center items-center w-[350px] ml-auto py-2 px-6 gap-4 mb-12">
+                  <div class="flex flex-row justify-between items-center gap-[10px] ">
+                    <button class="[font-family:'Open_Sans',sans-serif] box-border flex justify-center items-center h-8 px-4 bg-[#166e1d] text-white rounded-[999px] toggle-bg transition-colors duration-300" onclick="toggleButton(this)">Featured</button>
+                    <button class="[font-family:'Open_Sans',sans-serif] box-border flex justify-center items-center h-8 px-4 text-black rounded-[999px] toggle-bg transition-colors duration-300" onclick="toggleButton(this)">Featured2</button>
+                    <button class="[font-family:'Open_Sans',sans-serif] box-border flex justify-center items-center h-8 px-4 text-black rounded-[999px] toggle-bg transition-colors duration-300" onclick="toggleButton(this)">Featured3</button>
                   </div>
                 </div>
                 <!--? fillter -->
 
-                  <div class="flex justify-center flex-col gap-8 mt-6">
-                    <div class="all-products flex justify-center items-center gap-[31px]">
+                  <div class="gap-8 mt-6 px-1">
+                    <div class="all-products grid grid-cols-[repeat(auto-fill,minmax(340px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(380px,1fr))] gap-[31px]">
                       
-                      <div class="product-box flex justify-center items-stretch flex-col w-full sm:w-[390px]  box-border">
-                        <img class="h-[275px] w-full object-cover" src="./public/assets/product card image 2.png" />
+                      <div class="product-box flex justify-center items-stretch flex-col rounded-[10px] box-border cursor-pointer" onclick="window.location.href='./product-information.html'">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
                         <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
                           eos natus magni
                         </p>
                       </div>
 
-                      <div class="product-box flex justify-center items-stretch flex-col w-full sm:w-[390px]  box-border">
-                        <img class="h-[275px] w-full object-cover" src="./public/assets/product card image 2.png" />
+                      <div class="product-box flex justify-center rounded-[10px] items-stretch flex-col">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
                         <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
                           eos natus magni
                         </p>
                       </div>
 
-                      <div class="product-box flex justify-center items-stretch flex-col w-full sm:w-[390px]  box-border">
-                        <img class="h-[275px] w-full object-cover" src="./public/assets/product card image 2.png" />
+                      <div class="product-box flex justify-center rounded-[10px] items-stretch flex-col">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
+                        <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
+                          eos natus magni
+                        </p>
+                      </div>
+
+                      <div class="product-box flex justify-center rounded-[10px] items-stretch flex-col">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
+                        <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
+                          eos natus magni
+                        </p>
+                      </div>
+
+                      <div class="product-box flex justify-center rounded-[10px] items-stretch flex-col">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
+                        <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
+                          eos natus magni
+                        </p>
+                      </div>
+
+                      <div class="product-box flex justify-center rounded-[10px] items-stretch flex-col">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
+                        <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
+                          eos natus magni
+                        </p>
+                      </div>
+
+                      <div class="product-box flex justify-center rounded-[10px] items-stretch flex-col">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
+                        <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
+                          eos natus magni
+                        </p>
+                      </div>
+
+                      <div class="product-box flex justify-center rounded-[10px] items-stretch flex-col">
+                        <img class="h-[275px] w-full object-cover rounded-[10px]" src="./public/assets/product card image 2.png" />
                         <p class="[font-family:Montserrat,sans-serif] font-semibold uppercase text-[#333333] mt-4">
                           eos natus magni
                         </p>
@@ -151,10 +193,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- footer -->
-    <div class="footer bg-[#333333] px-[80px] py-[64px]">
+    <section class="footer bg-[#333333] px-[80px] py-[64px]">
       <div class="flex gap-[64px] flex-wrap">
         <div class="w-[530px] flex flex-col gap-[28px]">
           <img
@@ -259,7 +301,7 @@
           <a href="" class="text-white">Cookies Settings</a>
         </div>
       </div>
-    </div>
+    </section>
     <script src="./scripts/main.js"></script>
   </body>
 </html>

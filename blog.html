@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"/>
     <link rel="shortcut icon" href="./public/assets/image_5d73f37c.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -14,7 +17,7 @@
 
   <body>
     <!-- nav bar -->
-    <div class="navigation-bar" id="header">
+    <section class="navigation-bar" id="header">
       <div class="nav-container">
         <div class="brand-links">
           <!-- Brand Logo -->
@@ -54,7 +57,7 @@
           <a href="/product.html" class="text-[#BBB] nav-link capitalize">Products</a>
           <a href="/about-us.html" class="text-[#BBB] nav-link capitalize">About us</a>
           <a href="/contactus.html" class="text-[#BBB] nav-link capitalize">Contact</a>
-          <a href="/blog.html" class="text-[#166E1D] nav-link capitalize">Blog</a>
+          <a href="/blog.html" class="text-[#166E1D] nav-link font-semibold capitalize">Blog</a>
           <button class="contact-button-side outline-none">
             CONTACT US
             <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
@@ -63,11 +66,11 @@
         </div>
 
       </div>
-    </div>
+    </section>
 
     <!-- blogs page -->
-    <div>
-      <div class="bg-[#fbfcf8]">
+    <section>
+      <div class="blog-page">
         <div class="blog-container flex justify-start items-center flex-col w-4/5 m-auto">
           <div class="pt-8 pb-24">
             <div class="flex justify-start items-center flex-col mt-32">
@@ -297,9 +300,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- blogs page -->
+
     <!-- footer -->
-    <div class="footer bg-[#333333] px-[80px] py-[64px]">
+    <section class="footer bg-[#333333] px-[80px] py-[64px]">
       <div class="flex gap-[64px] flex-wrap">
         <div class="w-[530px] flex flex-col gap-[28px]">
           <img
@@ -404,7 +409,7 @@
           <a href="" class="text-white">Cookies Settings</a>
         </div>
       </div>
-    </div>
+    </section>
     <!-- footer -->
     <script src="./scripts/main.js"></script>
   </body>

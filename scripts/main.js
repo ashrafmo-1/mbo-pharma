@@ -47,7 +47,6 @@ function toggleModal(buttonSelector, modalSelector, displayStyle) {
 toggleModal(".apply-jop", ".overlay-modle-career", "flex");
 toggleModal(".close-career-modle", ".overlay-modle-career", "none");
 
-
 // FAQ
 function toggleAnswer(element) {
   const PARENT = element.parentElement;
@@ -63,4 +62,15 @@ function toggleAnswer(element) {
     ANSWER.classList.add("hidden");
     ICON.src = "./public/icons/plus-icon.svg";
   }
+}
+
+// product fillter btns
+function toggleButton(button) {
+  const buttons = document.querySelectorAll(".toggle-bg");
+  buttons.forEach((btn) => {
+    btn.classList.remove("bg-[#166e1d]", "text-white");
+    btn.classList.add("text-black");
+  });
+  button.classList.add("bg-[#166e1d]", "text-white");
+  button.classList.remove("text-black");
 }

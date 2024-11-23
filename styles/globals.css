@@ -25,7 +25,10 @@ body {
 .product-information-page,
 .blog-information,
 .career-details-page,
-.FAQ {
+.FAQ,
+.products-page,
+.blog-page,
+.aboutus-page {
   background: url(../public/assets/heroSection.png);
 }
 
