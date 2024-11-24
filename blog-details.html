@@ -15,7 +15,7 @@
   </head>
   <body>
     <!-- nav bar -->
-    <div class="navigation-bar" id="header">
+    <section class="navigation-bar" id="header">
       <div class="nav-container">
         <div class="brand-links">
           <!-- Brand Logo -->
@@ -40,12 +40,12 @@
         <!-- Contact Us Button -->
         <button class="contact-button">
           CONTACT US
-          <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
+          <img src="./assets/_Icon_ After.png" alt="Arrow Icon" />
         </button>
 
         <!-- Menu Bars -->
         <button class="menu-bars">
-          <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
+          <img src="./assets/_MenuExpandIcon_.png" alt="Menu Icon" />
         </button>
 
         <!-- side bar -->
@@ -71,25 +71,16 @@
           </button>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- blog details -->
     <div class="blog-information py-[150px]">
-      <div class="w-4/5 m-auto">
+      <div class="w-11/12 md:w-4/5 m-auto">
         <!-- hero blog details page -->
         <div class="hero relative">
-          <img
-            src="./public/assets/image1.png"
-            class="w-full h-[480px] rounded-[15px]"
-            alt="hero image"
-            loading="lazy"
-          />
-          <div
-            class="bg-[white] absolute top-[16px] right-[16px] box-border flex justify-start items-center flex-col w-[60px] py-2 rounded-lg"
-          >
-            <p
-              class="[font-family:Montserrat,sans-serif] text-2xl font-semibold leading-[29px] text-[#333333]"
-            >
+          <img src="./public/assets/image1.png" class="w-full h-auto max-h-[480px] rounded-[15px] object-cover" alt="hero image" loading="lazy" />
+          <div class="bg-[white] absolute top-[16px] right-[16px] box-border flex justify-start items-center flex-col w-[60px] py-2 rounded-lg">
+            <p class="[font-family:Montserrat,sans-serif] text-2xl font-semibold leading-[29px] text-[#333333]">
               27
             </p>
             <p
@@ -100,16 +91,11 @@
           </div>
         </div>
 
-        <div class="mt-[40px] flex flex-row justify-between gap-[32px]">
-          <div class="information w-[80%]">
-            <p
-              class="[font-family:Montserrat,sans-serif] text-6xl font-bold leading-[72px] uppercase text-[#333333]"
-            >
-              Tempore reiciendis facilis provident.
-            </p>
-            <p
-              class="[font-family:Roboto,sans-serif] text-xl font-normal text-left leading-[30px] text-[#777777] box-border mt-10"
-            >
+        <div class="mt-[40px] flex flex-col-reverse md:flex-row justify-between gap-[32px]">
+
+          <div class="information md:w-[80%]">
+            <p class="main-title [font-family:Montserrat,sans-serif] text-6xl font-bold leading-[72px] uppercase text-[#333333]">Tempore reiciendis facilis provident.</p>
+            <p class="[font-family:Roboto,sans-serif] text-xl font-normal text-left leading-[30px] text-[#777777] w-full box-border mt-10">
               Molestias perferendis tempora sequi consequatur quos distinctio
               quod error ipsam. Nisi earum quam facere saepe occaecati ad sequi
               laboriosam. Sequi aut quia beatae qui. Qui et est tempora
@@ -138,7 +124,7 @@
           </div>
 
           <!-- right controles status & Latest -->
-          <div  class="border bg-[white] box-border flex justify-start items-stretch flex-col gap-[31px] pt-[39px] px-[23px] rounded-lg border-solid border-[#e8e8e8]">
+          <div  class="border bg-[white] h-[fit-content] box-border flex justify-start items-stretch flex-col gap-[31px] pt-[39px] px-[10px] rounded-lg border-solid border-[#e8e8e8]">
             <div>
               <!-- Input Component is detected here -->
               <div class="border bg-[#fbfcf8] h-[50px] box-border flex flex-row items-center [justify-content:start] rounded-sm border-solid border-[#333333]">
@@ -226,9 +212,7 @@
                 Latest posts
               </p>
               <div class="w-[100.00%] box-border my-4">
-                <div
-                  class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[85px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]"
-                >
+                <div class="rounded bg-[rgba(51,51,51,0.04)] box-border flex justify-center items-center flex-row w-[100.00%] h-[100px] pl-2 pr-[7px] first:mt-0 mt-[16.00px]">
                   <img
                     class="rounded h-[69px] max-w-[initial] object-cover w-[85px] box-border block border-[none]"
                     src="./public/assets/Frame 239.png"
@@ -301,6 +285,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

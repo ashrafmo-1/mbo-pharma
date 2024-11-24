@@ -19,7 +19,7 @@
     }
 
     .brand {
-      background: var(--white-color);
+      background: #fff;
       border: 1px solid #e8e8e8;
       border-radius: 999px;
       padding: 7px 20px;
@@ -136,10 +136,49 @@
   }
 }
 
+/* hero section */
+@media (max-width: 1020px) {
+  .hero-title {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+
+  .img-hero-section {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-section-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 35px !important;
+    line-height: 35px !important;
+  }
+
+  .hero-title,
+  .hero-btn {
+    margin: auto;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+  }
+
+  .img-hero-section {
+    margin: auto !important;
+  }
+}
+
 /* ----------- about us ----------- */
 .images-section {
   display: flex;
   align-items: flex-end;
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
   .about-image-primary {
     width: 387px;
     height: 387px;
@@ -151,13 +190,20 @@
     position: relative;
     right: -40px;
     top: 50px;
+    @media (max-width: 767px) {
+      top: -50px;
+      right: 0;
+      margin: auto;
+    }
   }
 }
 
-
 /* career-details-page */
 @media (max-width: 420px) {
-  .location, .calendar, .salary, .time {
+  .location,
+  .calendar,
+  .salary,
+  .time {
     flex-direction: column;
     height: 70px;
     justify-content: space-around;
@@ -170,9 +216,58 @@
     display: none;
     transition: 1s;
   }
-  
+
   .visible {
     display: block;
     transition: 1s;
   }
 }
+
+/* about us */
+.btn-aboutus-page:hover img {
+  /* home section */
+  transform: translateX(5px);
+  transition: 0.6s;
+}
+
+/* @media query */
+@media (max-width: 991px) {
+  .heroSection-aboutus-page {
+    flex-direction: column-reverse !important;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 920px) {
+  .whyUs {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .whyUs {
+    margin-bottom: 170px !important;
+    .medicine-items {
+      width: 280px;
+      top: 250px;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .medicine-items > div {
+      flex-direction: column !important;
+    }
+  }
+  .team-card {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)) !important;
+  }
+}
+
+/* contact us */
+@media (max-width: 767px) {
+  .main-inputs {
+    width: 100%;
+  }
+}
+
+/* partners */

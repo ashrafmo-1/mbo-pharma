@@ -32,12 +32,12 @@
         <!-- Contact Us Button -->
         <button class="contact-button">
           CONTACT US
-          <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
+          <img src="./assets/_Icon_ After.png" alt="Arrow Icon" />
         </button>
 
         <!-- Menu Bars -->
         <button class="menu-bars">
-          <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
+          <img src="./assets/_MenuExpandIcon_.png" alt="Menu Icon" />
         </button>
 
         <!-- side bar -->
@@ -66,20 +66,21 @@
 
     <!-- product information -->
     <div class="box-border flex justify-start items-center flex-col product-information-page">
-      <div class="w-4/5 m-auto box-border pt-8 pb-24">
+      <div class="w-11/12 md:w-4/5 m-auto pt-8 pb-24 mx-[5px]">
         <div class="mt-32">
-          <button class="bg-[#999] rounded-[999px] px-[20px]" onclick="window.location.href='./product.html'">
-            <img class="w-[50px] h-[50px]" src="./public/icons/iconright.svg" alt="">
+          <button onclick="window.location.href='./product.html'" class="flex items-center justify-center rounded-lg underline mb-2 border border-solid border-[2px] border-gray-400 p-2 ">
+            <img class="w-[20px] h-[20px]" src="./public/icons/iconright.svg" alt="">
+            products
           </button>
-          <div class="flex justify-start items-start flex-row">
-            <img src="./public/assets/prodinfo1.png" class="h-[407px] object-cover w-[600px] box-border block rounded-xl" />
-            <img src="./public/assets/prodinfo2.png" class="h-[407px] object-cover w-[600px] box-border block ml-6 rounded-xl" />
+          <div class="box-border grid md:grid-cols-[repeat(auto-fill,minmax(400px,1fr))] grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-[30px] mb-[40px]">
+            <img src="./public/assets/prodinfo1.png" class="w-full h-auto max-w-full rounded-xl" />
+            <img src="./public/assets/prodinfo2.png" class="w-full h-auto max-w-full rounded-xl" />
           </div>
-          <div class="mt-10">
-            <h2 class="[font-family:Montserrat,sans-serif] text-6xl font-bold leading-[72px] uppercase text-[#333333]">
+          <div>
+            <h2 class="main-title [font-family:Montserrat,sans-serif] text-6xl font-bold leading-[72px] uppercase text-[#333333] mt-5">
               Product name
             </h2>
-            <p class="[font-family:Roboto,sans-serif] text-xl font-normal text-left leading-[30px] text-[#777777] box-border mt-10">
+            <p class="[font-family:Roboto,sans-serif] text-[16px] md:text-[22px] font-normal text-left leading-[30px] text-[#777777]">
               Molestias perferendis tempora sequi consequatur quos distinctio
               quod error ipsam. Nisi earum quam facere saepe occaecati ad sequi
               laboriosam. Sequi aut quia beatae qui.<br />
@@ -110,23 +111,25 @@
             </p>
           </div>
           <div class="mt-10">
-            <p class="[font-family:Montserrat,sans-serif] text-[40px] font-bold leading-[48px] uppercase text-[#333333]" >
+            <p class="main-title [font-family:Montserrat,sans-serif] text-[40px] font-bold leading-[48px] uppercase text-[#333333]" >
               more products
             </p>
-            <div class="flex justify-between items-center flex-row gap-[31px] w-[100.00%] box-border mt-10" >
-              <div class="flex justify-center items-stretch flex-col w-[390px]">
+            <div class="all-products grid grid-cols-[repeat(auto-fill,minmax(320px,1fr))] gap-[31px] box-border mt-10" >
+              <div class="flex justify-center items-stretch flex-col">
                 <img src="./public/assets/prodinfo1.png" class=" rounded-[10px]" />
                 <p class="[font-family:Montserrat,sans-serif] text-base font-semibold leading-[19px] uppercase text-[#333333] mt-4">
                   eos natus magni
                 </p>
               </div>
-              <div class="flex justify-center items-stretch flex-col w-[390px]">
+              
+              <div class="flex justify-center items-stretch flex-col">
                 <img src="./public/assets/prodinfo1.png" class=" rounded-[10px]" />
                 <p class="[font-family:Montserrat,sans-serif] text-base font-semibold leading-[19px] uppercase text-[#333333] mt-4" >
                   eos natus magni
                 </p>
               </div>
-              <div class="flex justify-center items-stretch flex-col w-[390px]">
+
+              <div class="flex justify-center items-stretch flex-col">
                 <img src="./public/assets/prodinfo1.png" class=" rounded-[10px]" />
                 <p class="[font-family:Montserrat,sans-serif] text-base font-semibold leading-[19px] uppercase text-[#333333] mt-4">
                   eos natus magni

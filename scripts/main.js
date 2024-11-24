@@ -8,20 +8,24 @@ const handleScroll = () => {
 };
 window.addEventListener("scroll", handleScroll);
 
+// about us status numbers
+
+
+
 // component fn
-function loadSection(elementId, filePath) {
-  fetch(filePath)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`Failed to load ${filePath}`);
-      }
-      return response.text();
-    })
-    .then((html) => {
-      document.getElementById(elementId).innerHTML = html;
-    })
-    .catch((error) => console.error(error));
-}
+// function loadSection(elementId, filePath) {
+//   fetch(filePath)
+//     .then((response) => {
+//       if (!response.ok) {
+//         throw new Error(`Failed to load ${filePath}`);
+//       }
+//       return response.text();
+//     })
+//     .then((html) => {
+//       document.getElementById(elementId).innerHTML = html;
+//     })
+//     .catch((error) => console.error(error));
+// }
 
 // loadSection("navigation", "../constants/nav.html");
 // loadSection("hero", "../home/hero.html");
@@ -37,12 +41,7 @@ NAVBAR.addEventListener("click", () => {
 });
 
 /* career jop modle */
-function toggleModal(buttonSelector, modalSelector, displayStyle) {
-  const button = document.querySelector(buttonSelector);
-  button.addEventListener("click", () => {
-    document.querySelector(modalSelector).style.display = displayStyle;
-  });
-}
+
 
 toggleModal(".apply-jop", ".overlay-modle-career", "flex");
 toggleModal(".close-career-modle", ".overlay-modle-career", "none");

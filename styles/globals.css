@@ -7,10 +7,30 @@
 
 /* not used */
 :root {
-  --orange-color: #ea5212;
-  --green-color: #458b4a;
-  --dark-color: #333333;
-  --white-color: #fff;
+  --primary-color: #ea5212; /* Main theme color */
+  --secondary-color: #166e1d; /* Secondary theme color */
+  --background-color: #ffffff; /* Background color */
+  --text-color: #333333; /* Default text color */
+  --hover-color: rgba(234, 82, 18, 0.8); /* Hover effect color */
+  --green-color: #166e1d; /* Green color for buttons */
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --primary-color: #333333;
+  --secondary-color: #fbfcf8;
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --hover-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Light theme */
+[data-theme='light'] {
+  --primary-color: #ea5212;
+  --secondary-color: #166e1d;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --hover-color: rgba(234, 82, 18, 0.8);
 }
 
 body {
@@ -18,6 +38,11 @@ body {
   line-height: 1.6; /* Added for better readability */
   color: #333; /* Set a default text color */
   background-color: #f9f9f9; /* Set a default background color */
+  /* overflow-x: hidden; */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .heroSection,
@@ -28,7 +53,8 @@ body {
 .FAQ,
 .products-page,
 .blog-page,
-.aboutus-page {
+.aboutus-page,
+.contactus-page {
   background: url(../public/assets/heroSection.png);
 }
 
@@ -42,7 +68,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 50;
+  z-index: 99999;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -77,4 +103,12 @@ body {
 }
 ::-webkit-scrollbar-track {
   background-color: var(--background-body);
+}
+
+/*  */
+
+@media (max-width: 840px) {
+  .contactPage-responsive {
+    flex-direction: column !important;
+  }
 }

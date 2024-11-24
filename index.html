@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"/>
-    <meta name="description" content="Discover the innovative solutions and services provided by MPO Pharma, dedicated to improving healthcare and patient outcomes." />
-    <meta name="keywords" content="MPO Pharma, healthcare, patient outcomes, innovative solutions, medical services, pharmaceutical company, medical research, drug development, clinical trials, health technology, patient care, medical innovation, healthcare solutions, pharmaceutical services, medical advancements, healthcare industry" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"
+    />
+    <meta
+      name="description"
+      content="Discover the innovative solutions and services provided by MPO Pharma, dedicated to improving healthcare and patient outcomes."
+    />
+    <meta
+      name="keywords"
+      content="MPO Pharma, healthcare, patient outcomes, innovative solutions, medical services, pharmaceutical company, medical research, drug development, clinical trials, health technology, patient care, medical innovation, healthcare solutions, pharmaceutical services, medical advancements, healthcare industry"
+    />
     <meta name="author" content="ashraf" />
     <meta property="og:title" content="Title for Open Graph" />
-    <meta property="og:description" content="Discover the innovative solutions and services provided by MPO Pharma, dedicated to improving healthcare and patient outcomes." />
+    <meta
+      property="og:description"
+      content="Discover the innovative solutions and services provided by MPO Pharma, dedicated to improving healthcare and patient outcomes."
+    />
     <meta property="og:image" content="https://www.example.com/image.jpg" />
     <meta property="og:url" content="https://www.example.com/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Title for Twitter" />
     <meta name="twitter:description" content="Description for Twitter" />
     <meta name="twitter:image" content="https://www.example.com/image.jpg" />
-    <link rel="shortcut icon" href="./public/assets/image_5d73f37c.jpeg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./public/assets/image_5d73f37c.jpeg"
+      type="image/x-icon"
+    />
     <link rel="canonical" href="https://www.example.com/" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
@@ -26,7 +47,6 @@
     <title>MPO Pharma - Innovative Healthcare Solutions</title>
   </head>
   <body>
-
     <section class="heroSection">
       <!-- nav bar -->
       <section class="navigation-bar" id="header">
@@ -34,65 +54,83 @@
           <div class="brand-links">
             <!-- Brand Logo -->
             <div class="brand">
-              <img src="./public/assets/image_5d73f37c.jpeg" alt="Brand" class="brand-logo" />
+              <img
+                src="./public/assets/image_5d73f37c.jpeg"
+                alt="Brand"
+                class="brand-logo"
+              />
             </div>
 
             <!-- Navigation Links -->
             <div class="nav-links">
-              <a href="/" class="nav-link active">home</a>
-              <a href="/product.html" class="nav-link">Products</a>
-              <a href="/about-us.html" class="nav-link">About us</a>
-              <a href="/contactus.html" class="nav-link">Contact</a>
-              <a href="/blog.html" class="nav-link">Blog</a>
+              <a href="./" class="nav-link active">home</a>
+              <a href="./product.html" class="nav-link">Products</a>
+              <a href="./about-us.html" class="nav-link">About us</a>
+              <a href="./blog.html" class="nav-link">Blog</a>
               <a href="./career.html" class="nav-link capitalize">career</a>
               <a href="./FAQ.html" class="nav-link capitalize">FAQ</a>
             </div>
           </div>
 
           <!-- Contact Us Button -->
-          <button class="contact-button">
+          <a href="./contactus.html" class="contact-button">
             CONTACT US
             <img src="./assets/_Icon_ After.png" alt="Arrow Icon" />
+          </a>
+
+          <!-- Menu Bars -->
+          <button class="menu-bars">
+            <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
           </button>
 
-                  <!-- Menu Bars -->
-        <button class="menu-bars">
-          <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
-        </button>
-
-        <!-- side bar -->
-        <div class="side-bar-responsive bg-[#FFFFFF] flex gap-[16px] flex-col h-[100vh] text-[32px] w-[300px] absolute top-0 left-[-320px] py-[32px] px-[50px]">
-          <a href="/index.html" class="text-[#166E1D] nav-link capitalize">home</a>
-          <a href="/product.html" class="text-[#BBB] nav-link capitalize">Products</a>
-          <a href="/about-us.html" class="text-[#BBB] nav-link capitalize">About us</a>
-          <a href="/contactus.html" class="text-[#BBB] nav-link capitalize">Contact</a>
-          <a href="/blog.html" class="text-[#BBB] nav-link capitalize">Blog</a>
-          <button class="contact-button-side outline-none">
-            CONTACT US
-            <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
-          </button>
-        </div>
+          <!-- side bar -->
+          <div
+            class="side-bar-responsive bg-[#FFFFFF] flex gap-[16px] flex-col h-[100vh] text-[32px] w-[300px] absolute top-0 left-[-320px] py-[32px] px-[50px]"
+          >
+            <a href="/index.html" class="text-[#166E1D] nav-link capitalize"
+              >home</a
+            >
+            <a href="/product.html" class="text-[#BBB] nav-link capitalize"
+              >Products</a
+            >
+            <a href="/about-us.html" class="text-[#BBB] nav-link capitalize"
+              >About us</a
+            >
+            <a href="/contactus.html" class="text-[#BBB] nav-link capitalize"
+              >Contact</a
+            >
+            <a href="/blog.html" class="text-[#BBB] nav-link capitalize"
+              >Blog</a
+            >
+            <button class="contact-button-side outline-none">
+              CONTACT US
+              <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
+            </button>
+          </div>
         </div>
       </section>
       <!-- nav bar -->
 
       <!-- hero section -->
-      <section class="">
-        <div class="flex justify-start flex-col box-border pt-[150px] w-4/5 m-auto">
-          <div class="flex justify-between">
+      <section>
+        <div class="flex justify-start flex-col box-border pt-[150px] w-11/12 md:w-4/5 m-auto">
+          <div class="hero-section-top flex justify-between">
             <div class="flex justify-start items-center flex-row">
               <div class="flex justify-center flex-col">
-                <p class="[font-family:Montserrat,sans-serif] w-4/5 text-[88px] font-bold text-left leading-[97px] uppercase text-[#2b2b2b]">
+                <h1 class="hero-title [font-family:Montserrat,sans-serif] font-[900] w-4/5 text-[88px] font-bold text-left leading-[97px] uppercase text-[#2b2b2b]">
                   Advanced Pharmaceuti cal Care
-                </p>
-                <button class="rounded border bg-transparent [font-family:Roboto,sans-serif] text-[#ea5212] hover:bg-[#ea5212] hover:text-[white] transition-colors cursor-pointer h-[41px] w-[151px] inline-flex items-center justify-center gap-[3px] box-border mt-[23.5px] border-solid border-[#ea5212]">
+                </h1>
+                <a
+                  href="#about-us-section"
+                  class="hero-btn rounded border bg-transparent [font-family:Roboto,sans-serif] text-[#ea5212] hover:bg-[#ea5212] hover:text-[white] transition-colors cursor-pointer h-[41px] w-[151px] inline-flex items-center justify-center gap-[3px] box-border mt-[23.5px] border-solid border-[#ea5212]"
+                >
                   <span>LEARN MORE</span>
                   <img src="./public/icons/home-hero-btn.svg" alt="" />
-                </button>
+                </a>
               </div>
             </div>
             <div class="imageSection">
-              <img src="./public/assets/hero.png" class="w-[600px]" alt="" />
+              <img src="./public/assets/hero.png" class="img-hero-section w-[600px]" alt="" />
               <p
                 class="[font-family:Roboto,sans-serif] text-xl text-center leading-[30px] text-[#777777] max-w-[411px] mt-8"
               >
@@ -118,123 +156,146 @@
           </div>
         </div>
       </section>
-
     </section>
 
     <!-- about us -->
-    <section class="flex bg-[#FBFCF8] relative">
-      <img
-        src="./public/assets/image_gradient.png" alt="Background"
-        class="background-image z-0 top-0 left-0 absolute"
-      />
+    <section class="flex bg-[#FBFCF8] relative" id="about-us-section">
+      <img src="./public/assets/image_gradient.png" alt="Background" class="background-image z-0 top-0 left-0 absolute" />
 
-      <div class="w-4/5 m-auto py-40">
-        <div class=" flex justify-between items-center gap-[35px]">
-          <div class="w-[50%]">
-            <h6 class="[font-family:Montserrat,sans-serif] text-[18px] font-semibold leading-[20.5px] text-[#166e1d] min-w-[96px] h-9 w-24">
-              Abo<span class="text-[#ea5212]">u</span>t
-              <span class="text-[#ea5212]">.</span>
-            </h6>
-            <h2 class="[font-family:Montserrat,sans-serif] text-[64px] leading-[70px] font-bold text-left uppercase text-[#333333] mt-2">
+      <div class="w-11/12 md:w-4/5 m-auto py-40">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-[35px]">
+          <div class="w-full md:w-[40%]">
+            <h4 class="[font-family:Montserrat,sans-serif] text-[18px] font-semibold leading-[20.5px] text-[#166e1d] min-w-[96px] h-9 w-24">
+              Abo<span class="text-[#ea5212]">u</span>t<span class="text-[#ea5212]">.</span>
+            </h4>
+            <h2 class="main-title [font-family:Montserrat,sans-serif] text-[32px] md:text-[64px] leading-[40px] md:leading-[70px] font-bold text-left uppercase text-[#333333] mt-2">
               <span>Know more About </span>
-              <span
-                class="[font-family:Montserrat,sans-serif] text-[64px] font-[100] text-left uppercase"
-              >
-                mbo parma
-              </span>
+              <span class="font-[100]"> mbo parma </span>
             </h2>
-            <p
-              class="[font-family:Roboto,sans-serif] text-[20px] font-normal text-left leading-[29px] text-[#8e8e8e]"
-            >
-              Qui veritatis quo non nostrum eveniet consequatur animi voluptas et.
-              Soluta quia numquam blanditiis rerum provident soluta. Reprehenderit
-              sunt error qui quo consectetur. Commodi molestiae deleniti
+            <p class="[font-family:Roboto,sans-serif] text-[16px] md:text-[20px] font-normal text-left leading-[24px] md:leading-[29px] text-[#8e8e8e]">
+              Qui veritatis quo non nostrum eveniet consequatur animi voluptas
+              et. Soluta quia numquam blanditiis rerum provident soluta.
+              Reprehenderit sunt error qui quo consectetur. Commodi molestiae
+              deleniti
             </p>
-            <button
-              class="btn-aboutus-page rounded bg-[#166e1d] outline-none [font-family:Roboto,sans-serif] text-base font-medium text-[white] cursor-pointer h-10 w-[200px] flex items-center justify-center gap-[1px] mt-4 border-[none]"
-              onclick="window.location.href = './about-us.html'"
-              >
+            <button class="btn-aboutus-page rounded bg-[#166e1d] outline-none [font-family:Roboto,sans-serif] text-base font-medium text-[white] cursor-pointer h-10 w-full md:w-[200px] flex items-center justify-center gap-[1px] mt-4 border-[none]" onclick="window.location.href = './about-us.html'">
               <span>know more about us</span>
-              <img src="./public/icons/about-icon-btn.svg" alt="">
-              <image src="{arrow}" alt="" />
+              <img src="./public/icons/about-icon-btn.svg" alt="" />
             </button>
           </div>
 
-          <style>
-            .btn-aboutus-page:hover img {
-              transform: translateX(5px);
-              transition: .6s;
-            }
-          </style>
-
-          <div class="images-section flex items-end">
-            <img
-              src="./public/assets/about2.png"
-              class="about-image-secondary"
-              alt=""
-            />
-            <img
-              src="./public/assets/about1.png"
-              class="about-image-primary"
-              alt=""
-            />
+          <div class="images-section flex flex-col md:flex-row items-end">
+            <img src="./public/assets/about2.png" class="about-image-secondary mb-4 md:mb-0" alt="about-image-secondary" />
+            <img src="./public/assets/about1.png" class="about-image-primary" alt="about-image-primary" />
           </div>
+          
         </div>
       </div>
     </section>
 
     <!-- products -->
-    <section class="flex justify-start items-center flex-col ProductsSection py-[70px]">
+    <section
+      class="flex justify-start items-center flex-col ProductsSection py-[70px]"
+    >
       <div class="w-4/5 m-auto">
         <div class="">
-          <span class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#458B4A]">
-            Prod<span class="text-[#EA5212]">u</span>cts<span class="text-[#EA5212]">.</span>
+          <span
+            class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#458B4A]"
+          >
+            Prod<span class="text-[#EA5212]">u</span>cts<span
+              class="text-[#EA5212]"
+              >.</span
+            >
           </span>
-          <h1 class="[font-family:Montserrat,sans-serif] text-[64px] font-bold text-left uppercase text-[#fbfcf8] max-w-[60%] box-border mt-2">
-            <span>Explore Our Range <span class="font-[100]">of</span> Products</span>
+          <h1
+            class="[font-family:Montserrat,sans-serif] text-[64px] font-bold text-left uppercase text-[#fbfcf8] max-w-[60%] box-border mt-2"
+          >
+            <span
+              >Explore Our Range
+              <span class="font-[100]">of</span> Products</span
+            >
             <span class="text-[#ee7541]">.</span>
           </h1>
         </div>
         <div class="flex gap-[32px] items-center mt-14">
           <div class="w-[180px] h-[184px] flex-none box-border">
-            <img src="./public/assets/product card image 2.png" class="max-w-[initial] object-cover w-full box-border rounded-xl" />
-            <p class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2">eos natus magni</p>
+            <img
+              src="./public/assets/product card image 2.png"
+              class="max-w-[initial] object-cover w-full box-border rounded-xl"
+            />
+            <p
+              class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2"
+            >
+              eos natus magni
+            </p>
           </div>
           <div class="w-[811px] flex-none box-border">
-            <img src="./public/assets/product card image 2.png" class="h-[366px] max-w-[initial] object-cover w-full box-border rounded-xl" />
-            <div class="flex justify-end items-stretch flex-col w-full box-border mt-2">
-              <p class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8]">
+            <img
+              src="./public/assets/product card image 2.png"
+              class="h-[366px] max-w-[initial] object-cover w-full box-border rounded-xl"
+            />
+            <div
+              class="flex justify-end items-stretch flex-col w-full box-border mt-2"
+            >
+              <p
+                class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8]"
+              >
                 eos natus magni
               </p>
             </div>
           </div>
           <div class="w-[180px] h-[184px] flex-none box-border">
-            <img src="./public/assets/product card image 2.png" class="max-w-[initial] object-cover w-full box-border rounded-xl" />
-            <div class="flex justify-end items-stretch flex-col w-full box-border mt-2">
-              <p class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8]">eos natus magni</p>
+            <img
+              src="./public/assets/product card image 2.png"
+              class="max-w-[initial] object-cover w-full box-border rounded-xl"
+            />
+            <div
+              class="flex justify-end items-stretch flex-col w-full box-border mt-2"
+            >
+              <p
+                class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8]"
+              >
+                eos natus magni
+              </p>
             </div>
           </div>
         </div>
         <div class="flex justify-center gap-4 h-9 grow-0 mt-[17.5px]">
-          <button class="bg-[#EA5212] outline-none box-border flex justify-center items-center px-2 rounded-[4px] transform rotate-180">
-            <img src="./public/icons/iconl.svg" alt="arrow" loading="lazy" width="30" />
+          <button
+            class="bg-[#EA5212] outline-none box-border flex justify-center items-center px-2 rounded-[4px] transform rotate-180"
+          >
+            <img
+              src="./public/icons/iconl.svg"
+              alt="arrow"
+              loading="lazy"
+              width="30"
+            />
           </button>
-          <button class="bg-[#EA5212] outline-none box-border flex justify-center items-center px-2 rounded-[4px]">
-            <img src="./public/icons/iconl.svg" alt="arrow" loading="lazy" width="30" />
+          <button
+            class="bg-[#EA5212] outline-none box-border flex justify-center items-center px-2 rounded-[4px]"
+          >
+            <img
+              src="./public/icons/iconl.svg"
+              alt="arrow"
+              loading="lazy"
+              width="30"
+            />
           </button>
         </div>
       </div>
     </section>
 
     <!-- why us -->
-    <section class="whyUs w-4/5 m-auto pt-[100px] flex pb-[180px] mb-[70px]">
-      <div class="w-full">
+    <section
+      class="w-11/12 md:w-4/5 m-auto whyUs pt-[100px] flex justify-between pb-[150px]"
+    >
+      <div class="sm:w-[600px]">
         <h3 class="text-[#166E1D] font-[500] text-[]">
           Why <span class="text-[#EA5212]">u</span>s
           <span class="text-[#EA5212]">?</span>
         </h3>
         <h2
-          class="[font-family:Montserrat,sans-serif] mb-[24px] text-[64px] leading-[70px] font-bold text-left uppercase text-[#333333] mt-2"
+          class="main-title [font-family:Montserrat,sans-serif] mb-[24px] text-[64px] leading-[70px] font-bold text-left uppercase text-[#333333] mt-2"
         >
           What <span class="font-[100]">Sets</span> Us Apart?
         </h2>
@@ -245,14 +306,15 @@
           et. Soluta quia numquam blanditiis dfjh ddgo
         </p>
       </div>
-      <div class="w-[1200px] h-[323px] relative">
-        <image
+      <div class="h-[323px] relative">
+        <img
           src="./public/assets/Years Experience.png"
-          class="w-full h-full"
+          class="h-full"
           alt=""
+          loading="lazy"
         />
         <div
-          class="medicine-items absolute top-[270px] left-[20px] w-[299px] rounded-[8px] shadow-2xl gap-[8px] flex flex-col p-[15px] bg-[#166E1D]"
+          class="medicine-items absolute top-[270px] left-[20px] w-[320px] rounded-[8px] shadow-2xl gap-[8px] flex flex-col p-[15px] bg-[#166E1D]"
         >
           <div class="flex flex-row items-center gap-[11px] text-white">
             <image src="./public/icons/Hand Coin Icon.png" class="" alt="" />
@@ -275,21 +337,18 @@
     </section>
 
     <!-- Reviews -->
-    <section class="bg-[#3333330A] h-[754px]">
-      <div class="whyUs w-4/5 m-auto pt-[100px] flex flex-col pb-[180px]">
+    <section class="bg-[#3333330A]">
+      <div class="whyUs w-4/5 m-auto py-[80px] flex flex-col">
         <div class="w-[60%]">
           <h3 class="text-[#166E1D] font-[500]">
             <span class="text-[#EA5212]">R</span>eviews
             <span class="text-[#EA5212]">.</span>
           </h3>
-          <h2
-            class="[font-family:Montserrat,sans-serif] mb-[24px] text-[64px] leading-[70px] font-bold text-left uppercase text-[#333333] mt-2"
-          >
-            What <span class="font-[100]">people</span> Said about us
-            <span class="text-[#EA5212]">.</span>
+          <h2 class="main-title [font-family:Montserrat,sans-serif] mb-[24px] text-[64px] leading-[70px] font-bold text-left uppercase text-[#333333] mt-2">
+            What <span class="font-[100]">people</span> Said about us<span class="text-[#EA5212]">.</span>
           </h2>
         </div>
-        <div class="py-[64px] px-[130px] items-center flex gap-[40px]">
+        <div class="py-[64px] items-center flex gap-[40px]">
           <image src="./public/assets/image.png" alt="" />
           <div class="flex flex-col">
             <p class="text-[#8E8E8E] mb-5 text-[35px]">
@@ -309,27 +368,17 @@
     </section>
 
     <!-- news -->
-    <section class="box-border flex justify-start items-center flex-col grow-0 shrink-0 basis-auto">
-      <div class="flex justify-center items-stretch flex-col min-w-[1233px] box-border py-24">
-        <div class="grow-0 shrink-0 basis-auto">
-          <span class="[font-family:Montserrat,sans-serif] font-semibold text-[17px] text-[#166E1D]">
-            News <span class="text-[#EA5212]">&amp;</span> articles
+      <section class="w-11/12 md:w-4/5 m-auto flex justify-center items-stretch flex-col box-border py-24">
+        <div>
+          <span class="[font-family:Montserrat,sans-serif] font-semibold text-[17px] text-[#166E1D]">News <span class="text-[#EA5212]">&amp;</span> articles
           </span>
-          <p
-            class="[font-family:Montserrat,sans-serif] text-[64px] font-bold leading-[77px] uppercase text-[#333333] mt-2 m-0 p-0"
-          >
+          <p class="main-title [font-family:Montserrat,sans-serif] text-[64px] font-bold leading-[77px] uppercase text-[#333333] mt-2">
             Latest news
           </p>
         </div>
-        <div
-          class="flex justify-between items-start flex-row gap-[29.5px] grow-0 shrink-0 basis-auto mt-10"
-        >
-          <div
-            class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col max-w-[391px] rounded-lg"
-          >
-            <div
-              class="box-border flex justify-start items-stretch flex-col rounded-lg"
-            >
+        <div  class="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-[29.5px] mt-10">
+          <div class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col rounded-lg">
+            <div class="box-border flex justify-start items-stretch flex-col rounded-lg">
               <img src="./public/assets/Product card.png" alt="" />
               <div
                 class="bg-[white] absolute top-3 right-3 box-border flex justify-start items-center flex-col w-[60px] rounded-lg"
@@ -366,12 +415,8 @@
               </p>
             </div>
           </div>
-          <div
-            class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col max-w-[391px] rounded-lg"
-          >
-            <div
-              class="box-border flex justify-start items-stretch flex-col rounded-lg"
-            >
+          <div class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col rounded-lg">
+            <div class="box-border flex justify-start items-stretch flex-col rounded-lg">
               <img src="./public/assets/Product card.png" alt="" />
               <div
                 class="bg-[white] absolute top-3 right-3 box-border flex justify-start items-center flex-col w-[60px] rounded-lg"
@@ -388,7 +433,9 @@
                 </p>
               </div>
             </div>
-            <div class="box-border grow-0 shrink-0 basis-auto pt-[21.5px] pb-[14.5px] px-[23px]">
+            <div
+              class="box-border grow-0 shrink-0 basis-auto pt-[21.5px] pb-[14.5px] px-[23px]"
+            >
               <p
                 class="[font-family:Montserrat,sans-serif] text-[32px] font-semibold text-left leading-[38px] text-[#333333] w-[100.00%] box-border m-0 p-0"
               >
@@ -406,12 +453,46 @@
               </p>
             </div>
           </div>
-          <div
-            class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col max-w-[391px] rounded-lg"
-          >
+          <div class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col rounded-lg">
+            <div class="box-border flex justify-start items-stretch flex-col rounded-lg">
+              <img src="./public/assets/Product card.png" alt="" />
+              <div
+                class="bg-[white] absolute top-3 right-3 box-border flex justify-start items-center flex-col w-[60px] rounded-lg"
+              >
+                <p
+                  class="[font-family:Montserrat,sans-serif] text-2xl font-semibold text-[#333333]"
+                >
+                  27
+                </p>
+                <p
+                  class="[font-family:Roboto,sans-serif] text-sm font-normal text-[#333333]"
+                >
+                  Jun
+                </p>
+              </div>
+            </div>
             <div
-              class="box-border flex justify-start items-stretch flex-col rounded-lg"
+              class="box-border grow-0 shrink-0 basis-auto pt-[21.5px] pb-[14.5px] px-[23px]"
             >
+              <p
+                class="[font-family:Montserrat,sans-serif] text-[32px] font-semibold text-left leading-[38px] text-[#333333] w-[100.00%] box-border m-0 p-0"
+              >
+                Sunt ab esse quo vel minima.
+              </p>
+              <p
+                class="[font-family:Roboto,sans-serif] text-lg font-normal text-left leading-[21.5px] text-[#8e8e8e] w-[100.00%] box-border mt-3.5 m-0 p-0"
+              >
+                Qui veritatis quo non nostrum eveniet consequatur
+              </p>
+              <p
+                class="[font-family:Roboto,sans-serif] text-lg font-normal text-[#166e1d] mt-3 m-0 p-0"
+              >
+                Read more
+              </p>
+            </div>
+          </div>
+          <div class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col rounded-lg">
+            <div class="box-border flex justify-start items-stretch flex-col rounded-lg">
               <img src="./public/assets/Product card.png" alt="" />
               <div
                 class="bg-[white] absolute top-3 right-3 box-border flex justify-start items-center flex-col w-[60px] rounded-lg"
@@ -449,28 +530,20 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- partners -->
-    <section class="bg-[#3333330A]">
-      <div class="w-4/5 m-auto py-[32px] flex justify-between">
-        <div>
-          <image src="./public/icons/google_logo.svg.svg" alt="Google 1" />
-        </div>
-        <div><image src="./public/icons/Group.svg" alt="Google" /></div>
-        <div>
-          <image src="./public/icons/google_logo.svg1.svg" alt="Slack" />
-        </div>
-        <div><image src="./public/icons/Group.svg" alt="Google" /></div>
-        <div>
-          <image src="./public/icons/google_logo.svg.svg" alt="Google 1" />
-        </div>
-        <div>
-          <image src="./public/icons/google_logo.svg1.svg" alt="Slack" />
-        </div>
-        <div><image src="./public/icons/Group.svg" alt="Google" /></div>
+    <section class="bg-[#3333330A] overflow-hidden">
+      <marquee behavior="scroll" direction="left" scrollamount="10">
+      <div class="slider py-[32px] flex justify-between overflow-x-auto w-full">
+        <image src="./public/icons/google_logo.svg.svg" alt="Google 1" class="w-auto max-w-full"  />
+        <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+        <image src="./public/icons/google_logo.svg.svg" alt="Google 1"  class="w-auto max-w-full"  />
+        <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+        <image src="./public/icons/google_logo.svg.svg" alt="Google 1"  class="w-auto max-w-full"  />
+        <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
       </div>
+    </marquee>
     </section>
 
     <!-- footer -->
@@ -502,11 +575,31 @@
           </div>
 
           <div class="social-media-icons flex gap-[12px]">
-            <img src="./public/assets/Facebook.png" width="25" height="25" alt="" />
-            <img src="./public/assets/Instagram.png" width="25" height="25" alt="" />
-            <img src="./public/assets/LinkedIn.png" width="25" height="25" alt="" />
+            <img
+              src="./public/assets/Facebook.png"
+              width="25"
+              height="25"
+              alt=""
+            />
+            <img
+              src="./public/assets/Instagram.png"
+              width="25"
+              height="25"
+              alt=""
+            />
+            <img
+              src="./public/assets/LinkedIn.png"
+              width="25"
+              height="25"
+              alt=""
+            />
             <img src="./public/assets/X.png" width="25" height="25" alt="" />
-            <img src="./public/assets/Youtube.svg" width="25" height="25" alt="" />
+            <img
+              src="./public/assets/Youtube.svg"
+              width="25"
+              height="25"
+              alt=""
+            />
           </div>
         </div>
 
@@ -580,6 +673,8 @@
         </div>
       </div>
     </section>
+
+
 
     <script src="./scripts/main.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
