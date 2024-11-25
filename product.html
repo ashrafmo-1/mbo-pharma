@@ -18,13 +18,13 @@
       <div class="nav-container">
         <div class="brand-links">
           <!-- Brand Logo -->
-          <div class="brand">
+          <a href="./index.html" class="brand">
             <img
               src="./public/assets/image_5d73f37c.jpeg"
               alt="Brand"
               class="brand-logo"
             />
-          </div>
+          </a>
 
           <!-- Navigation Links -->
           <div class="nav-links">
@@ -37,37 +37,36 @@
         </div>
 
         <!-- Contact Us Button -->
-        <button class="contact-button">
+        <a href="./contactus.html" class="contact-button">
           CONTACT US
-          <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
-        </button>
+          <img src="./public/icons/arrow.png" alt="Arrow Icon" />
+        </a>
 
         <!-- Menu Bars -->
         <button class="menu-bars">
-          <img src="/assets/_MenuExpandIcon_.png" alt="Menu Icon" />
+          <img src="./public/icons/bars.png" alt="Menu Icon" />
         </button>
 
         <!-- side bar -->
-        <div
-          class="side-bar-responsive bg-[#FFFFFF] flex gap-[16px] flex-col h-[100vh] text-[32px] w-[300px] absolute top-0 left-[-320px] py-[32px] px-[50px]"
+        <div  class="side-bar-responsive bg-[#FFFFFF] flex gap-[16px] flex-col h-[100vh] text-[32px] w-[300px] absolute top-0 left-[-320px] py-[32px] px-[50px]"
         >
-          <a href="/index.html" class="text-[#BBB] nav-link capitalize"
+          <a href="./index.html" class="text-[#BBB] nav-link capitalize"
             >home</a
           >
-          <a href="/product.html" class="text-[#166E1D] nav-link capitalize"
+          <a href="./product.html" class="text-[#166E1D] nav-link capitalize"
             >Products</a
           >
-          <a href="/about-us.html" class="text-[#BBB] nav-link capitalize"
+          <a href="./about-us.html" class="text-[#BBB] nav-link capitalize"
             >About us</a
           >
-          <a href="/contactus.html" class="text-[#BBB] nav-link capitalize"
+          <a href="./contactus.html" class="text-[#BBB] nav-link capitalize"
             >Contact</a
           >
-          <a href="/blog.html" class="text-[#BBB] nav-link capitalize">Blog</a>
-          <button class="contact-button-side outline-none">
+          <a href="./blog.html" class="text-[#BBB] nav-link capitalize">Blog</a>
+          <a href="./contactus.html" class="contact-button-side outline-none">
             CONTACT US
-            <img src="/assets/_Icon_ After.png" alt="Arrow Icon" />
-          </button>
+            <img src="./public/icons/arrow.png" alt="Arrow Icon" />
+          </a>
         </div>
       </div>
     </section>
@@ -181,109 +180,121 @@
     </section>
 
     <!-- footer -->
-    <section class="footer bg-[#333333] px-[80px] py-[64px]">
-      <div class="flex gap-[64px] flex-wrap">
-        <div class="w-[530px] flex flex-col gap-[28px]">
-          <img
-            src="./public/assets/image_5d73f37c.jpeg"
-            width="70"
-            height="50"
-            alt=""
-          />
-
-          <div class="address">
-            <div class="title items-stretch font-semibold text-[#FBFCF8] mt-1">
-              Address:
+    <!-- footer -->
+    <section class="footer bg-[#333333] py-[64px]">
+      <div class="w-11/12 md:w-4/5 m-auto">
+        <div class="flex gap-[64px] flex-wrap ">
+          <div class="w-[530px] flex flex-col gap-[28px]">
+            <img src="./public/assets/image_5d73f37c.jpeg" width="70" height="50" alt="logo image" />
+  
+            <div class="address">
+              <div class="title items-stretch font-semibold text-[#FBFCF8] mt-1">Address:</div>
+              <p class="text-[#FBFCF8] font-[100]">Level 1, 12 Sample St, Sydney NSW 2000</p>
             </div>
-            <p class="text-[#FBFCF8] font-[100]">
-              Level 1, 12 Sample St, Sydney NSW 2000
+  
+            <div class="contact">
+              <div class="title items-stretch font-semibold text-[#FBFCF8]">Contact:</div>
+              <p class="text-[#FBFCF8] font-[100] mt-1">+20 1007 8155 7</p>
+              <p class="text-[#FBFCF8] font-[100]">info@relume.io</p>
+            </div>
+  
+            <div class="social-media-icons flex gap-[12px]">
+              <a href="https://www.facebook.com" target="_blank">
+                <img
+                  src="./public/assets/Facebook.png"
+                  width="25"
+                  height="25"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                <img
+                  src="./public/assets/Instagram.png"
+                  width="25"
+                  height="25"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                <img
+                  src="./public/assets/LinkedIn.png"
+                  width="25"
+                  height="25"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                <img
+                  src="./public/assets/X.png"
+                  width="25"
+                  height="25"
+                  alt="Twitter"
+                />
+              </a>
+              <a href="https://www.youtube.com" target="_blank">
+                <img
+                  src="./public/assets/Youtube.svg"
+                  width="25"
+                  height="25"
+                  alt="YouTube"
+                />
+              </a>
+            </div>
+          </div>
+  
+          <div class="flex flex-col gap-[16px] w-[120px]">
+            <a
+              href="./index.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              home
+            </a>
+            <a
+              href="./product.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              Products
+            </a>
+            <a
+              href="./about-us.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              About us
+            </a>
+            <a
+              href="./contactus.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              Contact
+            </a>
+            <a
+              href="./blog.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              Blog
+            </a>
+          </div>
+  
+          <div class="SubscribeForm w-[450px] sm:mb-[250px]">
+            <form class="Subscribe flex flex-col sm:flex-row gap-5 mb-6">
+              <input type="email" name="email" id="email" class="w-full p-[12px] outline-none border border-white bg-transparent rounded-[2px] text-[white]" placeholder="Enter your emailEnter your email" />
+              <button class="bg-[#EA5212] text-[white] rounded-[4px] px-[12px] h-[48px] outline-none" type="submit">Subscribe</button>
+            </form>
+            <p class="text-[white] [font-family: Montserrat] font-[400] text-[16px]">
+              By subscribing you agree to with our Privacy Policy and provide
+              consent to receive updates from our company.
             </p>
           </div>
-
-          <div class="contact">
-            <div class="title items-stretch font-semibold text-[#FBFCF8]">
-              Contact:
-            </div>
-            <p class="text-[#FBFCF8] font-[100] mt-1">+20 1007 8155 7</p>
-            <p class="text-[#FBFCF8] font-[100]">info@relume.io</p>
-          </div>
-
-          <div class="social-media-icons flex gap-[12px]">
-            <img src="./public/assets/Facebook.png" width="25" height="25" alt="" />
-            <img src="./public/assets/Instagram.png" width="25" height="25" alt="" />
-            <img src="./public/assets/LinkedIn.png" width="25" height="25" alt="" />
-            <img src="./public/assets/X.png" width="25" height="25" alt="" />
-            <img src="./public/assets/Youtube.svg" width="25" height="25" alt="" />
-          </div>
         </div>
-
-        <div class="flex flex-col gap-[16px] w-[120px]">
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            home
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            Products
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            About us
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            Contact
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            Blog
-          </a>
-        </div>
-
-        <div class="SubscribeForm w-[450px] mb-[250px]">
-          <form class="Subscribe flex gap-5 mb-6">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="w-full p-[12px] outline-none border border-white bg-transparent rounded-[2px] text-[white]"
-              placeholder="Enter your emailEnter your email"
-            />
-            <button
-              class="bg-[#EA5212] text-[white] rounded-[4px] px-[12px] h-[48px] outline-none"
-              type="submit"
-            >
-              Subscribe
-            </button>
-          </form>
-          <p
-            class="text-[white] [font-family: Montserrat] font-[400] text-[16px]"
-          >
-            By subscribing you agree to with our Privacy Policy and provide
-            consent to receive updates from our company.
+        <div  class="text-center mt-6 border-t pt-[32px] flex items-center justify-between flex-wrap-reverse border-[#FBFCF8]">
+          <p class="text-[#FBFCF8] text-[14px]">
+            &copy; 2024 qoutation-technology. All rights reserved.
           </p>
-        </div>
-      </div>
-      <div
-        class="text-center mt-6 border-t pt-[32px] flex items-center justify-between flex-wrap-reverse border-[#FBFCF8]"
-      >
-        <p class="text-[#FBFCF8] text-[14px]">
-          &copy; 2024 qoutation-technology. All rights reserved.
-        </p>
-        <div class="links flex flex-col gap-[24px] md:flex-row">
-          <a href="" class="text-white">Privacy Policy</a>
-          <a href="" class="text-white">Terms of Service</a>
-          <a href="" class="text-white">Cookies Settings</a>
+          <div class="links flex flex-col gap-[24px] md:flex-row">
+            <a href="" class="text-white">Privacy Policy</a>
+            <a href="" class="text-white">Terms of Service</a>
+            <a href="" class="text-white">Cookies Settings</a>
+          </div>
         </div>
       </div>
     </section>
