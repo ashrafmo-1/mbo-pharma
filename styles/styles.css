@@ -177,7 +177,7 @@
   display: flex;
   align-items: flex-end;
   @media (max-width: 767px) {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
   .about-image-primary {
     width: 387px;
@@ -220,6 +220,8 @@
   .visible {
     display: block;
     transition: 1s;
+    border: 1px solid #333;
+    border-radius: 0px 0px 8px 8px;
   }
 }
 
@@ -270,4 +272,13 @@
   }
 }
 
-/* partners */
+/* reviews */
+@media (max-width: 767px) {
+  .reviews-persons {
+    flex-direction: column !important;
+    padding-block: 40px;
+    .text-reviews-person {
+      font-size: 22px !important;
+    }
+  }
+}

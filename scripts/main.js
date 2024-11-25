@@ -43,8 +43,8 @@ NAVBAR.addEventListener("click", () => {
 /* career jop modle */
 
 
-toggleModal(".apply-jop", ".overlay-modle-career", "flex");
-toggleModal(".close-career-modle", ".overlay-modle-career", "none");
+// toggleModal(".apply-jop", ".overlay-modle-career", "flex");
+// toggleModal(".close-career-modle", ".overlay-modle-career", "none");
 
 // FAQ
 function toggleAnswer(element) {
@@ -55,11 +55,17 @@ function toggleAnswer(element) {
   if (ANSWER.classList.contains("hidden")) {
     ANSWER.classList.remove("hidden");
     ANSWER.classList.add("visible");
+    ANSWER.classList.add("activeQuistion")
     ICON.src = "./public/icons/menus-icon.svg";
+    element.style.borderTop = "1px solid #333";
+    element.style.borderRight = "1px solid #333";
+    element.style.borderLeft = "1px solid #333";
+    element.style.borderRadius = "8px 8px 0px 0px";
   } else {
     ANSWER.classList.remove("visible");
     ANSWER.classList.add("hidden");
     ICON.src = "./public/icons/plus-icon.svg";
+    element.style.border = "none";
   }
 }
 

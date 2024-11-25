@@ -38,7 +38,7 @@ body {
   line-height: 1.6; /* Added for better readability */
   color: #333; /* Set a default text color */
   background-color: #f9f9f9; /* Set a default background color */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 html {

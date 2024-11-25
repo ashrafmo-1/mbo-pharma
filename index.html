@@ -35,13 +35,11 @@
     <meta name="twitter:title" content="Title for Twitter" />
     <meta name="twitter:description" content="Description for Twitter" />
     <meta name="twitter:image" content="https://www.example.com/image.jpg" />
-    <link
-      rel="shortcut icon"
-      href="./public/assets/image_5d73f37c.jpeg"
-      type="image/x-icon"
-    />
-    <link rel="canonical" href="https://www.example.com/" />
+    <!-- styles -->
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="shortcut icon" href="./public/assets/image_5d73f37c.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="canonical" href="https://www.example.com/" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>MPO Pharma - Innovative Healthcare Solutions</title>
@@ -194,94 +192,67 @@
     </section>
 
     <!-- products -->
-    <section
-      class="flex justify-start items-center flex-col ProductsSection py-[70px]"
-    >
-      <div class="w-4/5 m-auto">
-        <div class="">
-          <span
-            class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#458B4A]"
-          >
-            Prod<span class="text-[#EA5212]">u</span>cts<span
-              class="text-[#EA5212]"
-              >.</span
-            >
-          </span>
-          <h1
-            class="[font-family:Montserrat,sans-serif] text-[64px] font-bold text-left uppercase text-[#fbfcf8] max-w-[60%] box-border mt-2"
-          >
-            <span
-              >Explore Our Range
-              <span class="font-[100]">of</span> Products</span
-            >
-            <span class="text-[#ee7541]">.</span>
+    <section class="flex justify-start items-center flex-col ProductsSection py-[70px]">
+      <div class="w-11/12 md:w-[80%] m-auto">
+        <div>
+          <h3 class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold leading-[20.5px] text-[#458B4A]">
+            Prod<span class="text-[#EA5212]">u</span>cts<span class="text-[#EA5212]">.</span>
+          </h3>
+          <h1 class="main-title [font-family:Montserrat,sans-serif] text-[64px] leading-[76px] font-bold text-left uppercase text-[#fbfcf8] max-w-[60%] box-border mt-2">
+            <span >Explore Our Range<span class="font-[100]"> of</span> Products</span><span class="text-[#ee7541]">.</span>
           </h1>
         </div>
-        <div class="flex gap-[32px] items-center mt-14">
-          <div class="w-[180px] h-[184px] flex-none box-border">
-            <img
-              src="./public/assets/product card image 2.png"
-              class="max-w-[initial] object-cover w-full box-border rounded-xl"
-            />
-            <p
-              class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2"
-            >
-              eos natus magni
-            </p>
-          </div>
-          <div class="w-[811px] flex-none box-border">
-            <img
-              src="./public/assets/product card image 2.png"
-              class="h-[366px] max-w-[initial] object-cover w-full box-border rounded-xl"
-            />
-            <div
-              class="flex justify-end items-stretch flex-col w-full box-border mt-2"
-            >
-              <p
-                class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8]"
-              >
+        <div class="swiper mySwiper relative">
+          <div class="swiper-wrapper flex justify-center items-center gap-8 mt-10">
+            <div class="swiper-slide w-[180px] h-[full] flex-none">
+              <img src="./public/assets/prodinfo2.png" class="object-cover w-full h-full rounded-xl" />
+              <p class="font-montserrat text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2 text-center">
+                eos natus magni
+              </p>
+            </div>
+            <div class="swiper-slide w-[180px] h-[full] flex-none">
+              <img src="./public/assets/prodinfo2.png" class="object-cover w-full h-full rounded-xl" />
+              <p class="font-montserrat text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2 text-center">
+                eos natus magni
+              </p>
+            </div>
+            <div class="swiper-slide w-[180px] h-[full] flex-none">
+              <img src="./public/assets/prodinfo2.png" class="object-cover w-full h-full rounded-xl" />
+              <p class="font-montserrat text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2 text-center">
+                eos natus magni
+              </p>
+            </div>
+            <div class="swiper-slide w-[180px] h-[full] flex-none">
+              <img src="./public/assets/prodinfo2.png" class="object-cover w-full h-full rounded-xl" />
+              <p class="font-montserrat text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2 text-center">
+                eos natus magni
+              </p>
+            </div>
+            <div class="swiper-slide w-[180px] h-[full] flex-none">
+              <img src="./public/assets/prodinfo2.png" class="object-cover w-full h-full rounded-xl" />
+              <p class="font-montserrat text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2 text-center">
+                eos natus magni
+              </p>
+            </div>
+            <div class="swiper-slide w-[180px] h-[full] flex-none">
+              <img src="./public/assets/prodinfo2.png" class="object-cover w-full h-full rounded-xl" />
+              <p class="font-montserrat text-[17px] font-semibold uppercase underline text-[#fbfcf8] mt-2 text-center">
                 eos natus magni
               </p>
             </div>
           </div>
-          <div class="w-[180px] h-[184px] flex-none box-border">
-            <img
-              src="./public/assets/product card image 2.png"
-              class="max-w-[initial] object-cover w-full box-border rounded-xl"
-            />
-            <div
-              class="flex justify-end items-stretch flex-col w-full box-border mt-2"
-            >
-              <p
-                class="[font-family:Montserrat,sans-serif] text-[17px] font-semibold uppercase underline text-[#fbfcf8]"
-              >
-                eos natus magni
-              </p>
-            </div>
+          <!-- Navigation Buttons -->
+          <div class="flex justify-center gap-4 mt-5">
+            <button class="next-btn bg-[#EA5212] p-2 rounded transform rotate-180">
+              <img src="./public/icons/iconl.svg" alt="Previous" width="20" />
+            </button>
+            <button class="prev-btn bg-[#EA5212] p-2 rounded">
+              <img src="./public/icons/iconl.svg" alt="Next" width="20" />
+            </button>
           </div>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
-        <div class="flex justify-center gap-4 h-9 grow-0 mt-[17.5px]">
-          <button
-            class="bg-[#EA5212] outline-none box-border flex justify-center items-center px-2 rounded-[4px] transform rotate-180"
-          >
-            <img
-              src="./public/icons/iconl.svg"
-              alt="arrow"
-              loading="lazy"
-              width="30"
-            />
-          </button>
-          <button
-            class="bg-[#EA5212] outline-none box-border flex justify-center items-center px-2 rounded-[4px]"
-          >
-            <img
-              src="./public/icons/iconl.svg"
-              alt="arrow"
-              loading="lazy"
-              width="30"
-            />
-          </button>
-        </div>
+        
       </div>
     </section>
 
@@ -339,19 +310,19 @@
     <!-- Reviews -->
     <section class="bg-[#3333330A]">
       <div class="whyUs w-4/5 m-auto py-[80px] flex flex-col">
-        <div class="w-[60%]">
+        <div class="w-full md:w-[60%]">
           <h3 class="text-[#166E1D] font-[500]">
             <span class="text-[#EA5212]">R</span>eviews
             <span class="text-[#EA5212]">.</span>
           </h3>
-          <h2 class="main-title [font-family:Montserrat,sans-serif] mb-[24px] text-[64px] leading-[70px] font-bold text-left uppercase text-[#333333] mt-2">
+          <h2 class="main-title [font-family:Montserrat,sans-serif] mb-[24px] text-[64px] leading-[70px] font-bold uppercase text-[#333333] mt-2">
             What <span class="font-[100]">people</span> Said about us<span class="text-[#EA5212]">.</span>
           </h2>
         </div>
-        <div class="py-[64px] items-center flex gap-[40px]">
+        <div class="reviews-persons py-[64px] items-center flex gap-[40px]">
           <image src="./public/assets/image.png" alt="" />
           <div class="flex flex-col">
-            <p class="text-[#8E8E8E] mb-5 text-[35px]">
+            <p class="text-reviews-person text-[#8E8E8E] mb-5 text-[35px]">
               Cras vehicula, mi eget laoreet tincidunt, purus nunc pretium
               libero, nec bibendum odio risus sit amet ante.
             </p>
@@ -376,7 +347,7 @@
             Latest news
           </p>
         </div>
-        <div  class="grid grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-[29.5px] mt-10">
+        <div  class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] md:grid-cols-[repeat(auto-fill,minmax(350px,1fr))] gap-[29.5px] mt-10">
           <div class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col rounded-lg">
             <div class="box-border flex justify-start items-stretch flex-col rounded-lg">
               <img src="./public/assets/Product card.png" alt="" />
@@ -533,150 +504,216 @@
       </section>
 
     <!-- partners -->
-    <section class="bg-[#3333330A] overflow-hidden">
-      <marquee behavior="scroll" direction="left" scrollamount="10">
-      <div class="slider py-[32px] flex justify-between overflow-x-auto w-full">
-        <image src="./public/icons/google_logo.svg.svg" alt="Google 1" class="w-auto max-w-full"  />
-        <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
-        <image src="./public/icons/google_logo.svg.svg" alt="Google 1"  class="w-auto max-w-full"  />
-        <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
-        <image src="./public/icons/google_logo.svg.svg" alt="Google 1"  class="w-auto max-w-full"  />
-        <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+    <section class="bg-[#3333330A]">
+      <div class="w-11/12 md:w-4/5 swiper partner-mySwiper py-8">
+        <div class="swiper-wrapper flex gap-4">
+          <div class="swiper-slide">
+            <img src="./public/icons/google_logo.svg.svg"" alt="Google 1" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/google_logo.svg.svg"" alt="Google 1" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/google_logo.svg.svg"" alt="Google 1" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./public/icons/Group.svg" alt="Google" class="w-auto max-w-full" />
+          </div>
+        </div>
       </div>
-    </marquee>
     </section>
+
 
     <!-- footer -->
-    <section class="footer bg-[#333333] px-[80px] py-[64px]">
-      <div class="flex gap-[64px] flex-wrap">
-        <div class="w-[530px] flex flex-col gap-[28px]">
-          <img
-            src="./public/assets/image_5d73f37c.jpeg"
-            width="70"
-            height="50"
-            alt=""
-          />
-
-          <div class="address">
-            <div class="title items-stretch font-semibold text-[#FBFCF8] mt-1">
-              Address:
+    <section class="footer bg-[#333333] py-[64px]">
+      <div class="w-11/12 md:w-4/5 m-auto">
+        <div class="flex gap-[64px] flex-wrap ">
+          <div class="w-[530px] flex flex-col gap-[28px]">
+            <img src="./public/assets/image_5d73f37c.jpeg" width="70" height="50" alt="logo image" />
+  
+            <div class="address">
+              <div class="title items-stretch font-semibold text-[#FBFCF8] mt-1">Address:</div>
+              <p class="text-[#FBFCF8] font-[100]">Level 1, 12 Sample St, Sydney NSW 2000</p>
             </div>
-            <p class="text-[#FBFCF8] font-[100]">
-              Level 1, 12 Sample St, Sydney NSW 2000
+  
+            <div class="contact">
+              <div class="title items-stretch font-semibold text-[#FBFCF8]">Contact:</div>
+              <p class="text-[#FBFCF8] font-[100] mt-1">+20 1007 8155 7</p>
+              <p class="text-[#FBFCF8] font-[100]">info@relume.io</p>
+            </div>
+  
+            <div class="social-media-icons flex gap-[12px]">
+              <a href="https://www.facebook.com" target="_blank">
+                <img
+                  src="./public/assets/Facebook.png"
+                  width="25"
+                  height="25"
+                  alt="Facebook"
+                />
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                <img
+                  src="./public/assets/Instagram.png"
+                  width="25"
+                  height="25"
+                  alt="Instagram"
+                />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank">
+                <img
+                  src="./public/assets/LinkedIn.png"
+                  width="25"
+                  height="25"
+                  alt="LinkedIn"
+                />
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                <img
+                  src="./public/assets/X.png"
+                  width="25"
+                  height="25"
+                  alt="Twitter"
+                />
+              </a>
+              <a href="https://www.youtube.com" target="_blank">
+                <img
+                  src="./public/assets/Youtube.svg"
+                  width="25"
+                  height="25"
+                  alt="YouTube"
+                />
+              </a>
+            </div>
+          </div>
+  
+          <div class="flex flex-col gap-[16px] w-[120px]">
+            <a
+              href="./index.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              home
+            </a>
+            <a
+              href="./product.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              Products
+            </a>
+            <a
+              href="./about-us.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              About us
+            </a>
+            <a
+              href="./contactus.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              Contact
+            </a>
+            <a
+              href="./blog.html"
+              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
+            >
+              Blog
+            </a>
+          </div>
+  
+          <div class="SubscribeForm w-[450px] sm:mb-[250px]">
+            <form class="Subscribe flex flex-col sm:flex-row gap-5 mb-6">
+              <input type="email" name="email" id="email" class="w-full p-[12px] outline-none border border-white bg-transparent rounded-[2px] text-[white]" placeholder="Enter your emailEnter your email" />
+              <button class="bg-[#EA5212] text-[white] rounded-[4px] px-[12px] h-[48px] outline-none" type="submit">Subscribe</button>
+            </form>
+            <p class="text-[white] [font-family: Montserrat] font-[400] text-[16px]">
+              By subscribing you agree to with our Privacy Policy and provide
+              consent to receive updates from our company.
             </p>
           </div>
-
-          <div class="contact">
-            <div class="title items-stretch font-semibold text-[#FBFCF8]">
-              Contact:
-            </div>
-            <p class="text-[#FBFCF8] font-[100] mt-1">+20 1007 8155 7</p>
-            <p class="text-[#FBFCF8] font-[100]">info@relume.io</p>
-          </div>
-
-          <div class="social-media-icons flex gap-[12px]">
-            <img
-              src="./public/assets/Facebook.png"
-              width="25"
-              height="25"
-              alt=""
-            />
-            <img
-              src="./public/assets/Instagram.png"
-              width="25"
-              height="25"
-              alt=""
-            />
-            <img
-              src="./public/assets/LinkedIn.png"
-              width="25"
-              height="25"
-              alt=""
-            />
-            <img src="./public/assets/X.png" width="25" height="25" alt="" />
-            <img
-              src="./public/assets/Youtube.svg"
-              width="25"
-              height="25"
-              alt=""
-            />
-          </div>
         </div>
-
-        <div class="flex flex-col gap-[16px] w-[120px]">
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            home
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            Products
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            About us
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            Contact
-          </a>
-          <a
-            href=""
-            class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-          >
-            Blog
-          </a>
-        </div>
-
-        <div class="SubscribeForm w-[450px] mb-[250px]">
-          <form class="Subscribe flex gap-5 mb-6">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="w-full p-[12px] outline-none border border-white bg-transparent rounded-[2px] text-[white]"
-              placeholder="Enter your emailEnter your email"
-            />
-            <button
-              class="bg-[#EA5212] text-[white] rounded-[4px] px-[12px] h-[48px] outline-none"
-              type="submit"
-            >
-              Subscribe
-            </button>
-          </form>
-          <p
-            class="text-[white] [font-family: Montserrat] font-[400] text-[16px]"
-          >
-            By subscribing you agree to with our Privacy Policy and provide
-            consent to receive updates from our company.
+        <div  class="text-center mt-6 border-t pt-[32px] flex items-center justify-between flex-wrap-reverse border-[#FBFCF8]">
+          <p class="text-[#FBFCF8] text-[14px]">
+            &copy; 2024 qoutation-technology. All rights reserved.
           </p>
-        </div>
-      </div>
-      <div
-        class="text-center mt-6 border-t pt-[32px] flex items-center justify-between flex-wrap-reverse border-[#FBFCF8]"
-      >
-        <p class="text-[#FBFCF8] text-[14px]">
-          &copy; 2024 qoutation-technology. All rights reserved.
-        </p>
-        <div class="links flex flex-col gap-[24px] md:flex-row">
-          <a href="" class="text-white">Privacy Policy</a>
-          <a href="" class="text-white">Terms of Service</a>
-          <a href="" class="text-white">Cookies Settings</a>
+          <div class="links flex flex-col gap-[24px] md:flex-row">
+            <a href="" class="text-white">Privacy Policy</a>
+            <a href="" class="text-white">Terms of Service</a>
+            <a href="" class="text-white">Cookies Settings</a>
+          </div>
         </div>
       </div>
     </section>
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      slidesPerView: 'auto',
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 3,
+        },
+      },
+        navigation: {
+          nextEl: '.next-btn',
+          prevEl: '.prev-btn',
+        },
+    });
+    </script>
+    <script>
+      var swiper = new Swiper('.partner-mySwiper', {
+        autoplay: {
+          delay: 300,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+          reverseDirection: true,
+          speed: 500,
+        },
+        space: 20,
+        slidesPerView: 5,
+        loop: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 5,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
