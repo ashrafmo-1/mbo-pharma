@@ -127,9 +127,7 @@
 
       <!-- status numbres -->
       <section class="bg-[#f5f5f3]">
-        <div
-          class="w-4/5 sm:w-4/5 m-auto flex items-center flex-col lg:flex-row box-border justify-between gap-[30px] py-12"
-        >
+        <div class="w-4/5 sm:w-4/5 m-auto flex items-center flex-col lg:flex-row box-border justify-between gap-[50px] py-12">
           <div class="flex justify-center items-center flex-col">
             <p
               id="happyClients"
@@ -138,20 +136,19 @@
               0
             </p>
             <p
-              class="[font-family:Roboto,sans-serif] text-xl font-normal text-center text-[#777777] w-[139px] mt-2"
+              class="[font-family:Roboto,sans-serif] text-xl font-normal text-center text-[#777777] w-[139px] mt-1"
             >
               Happy Clients
             </p>
           </div>
           <div class="flex justify-center items-stretch flex-col">
-            <p
-              id="employees"
+            <p id="employees"
               class="[font-family:Montserrat,sans-serif] text-[56px] font-bold leading-[67px] text-[#166e1d] self-center"
             >
               0
             </p>
             <p
-              class="[font-family:Roboto,sans-serif] text-xl font-normal text-center text-[#777777] w-[139px] mt-2 mx-4"
+              class="[font-family:Roboto,sans-serif] text-xl font-normal text-center text-[#777777] w-[139px] mt-1 mx-4"
             >
               Employees
             </p>
@@ -164,7 +161,7 @@
               0
             </p>
             <p
-              class="[font-family:Roboto,sans-serif] text-xl font-normal text-center text-[#777777] w-[139px] mt-2 mx-4"
+              class="[font-family:Roboto,sans-serif] text-xl font-normal text-center text-[#777777] w-[139px] mt-1 mx-4"
             >
               Products
             </p>
@@ -177,7 +174,7 @@
               0
             </p>
             <p
-              class="[font-family:Roboto,sans-serif] text-xl font-normal text-[#777777] mt-2"
+              class="[font-family:Roboto,sans-serif] text-xl font-normal text-[#777777] mt-1"
             >
               Partners
             </p>
@@ -377,7 +374,7 @@
     <section class="footer bg-[#333333] py-[64px]">
       <div class="w-11/12 md:w-4/5 m-auto">
         <div class="flex gap-[64px] flex-wrap ">
-          <div class="w-[530px] flex flex-col gap-[28px]">
+          <div class="w-[450px] flex flex-col gap-[28px]">
             <img src="./public/assets/image_5d73f37c.jpeg" width="70" height="50" alt="logo image" />
   
             <div class="address">
@@ -392,56 +389,16 @@
             </div>
   
             <div class="social-media-icons flex gap-[12px]">
-              <a href="https://www.facebook.com" target="_blank">
-                <img
-                  src="./public/assets/Facebook.png"
-                  width="25"
-                  height="25"
-                  alt="Facebook"
-                />
-              </a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img
-                  src="./public/assets/Instagram.png"
-                  width="25"
-                  height="25"
-                  alt="Instagram"
-                />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank">
-                <img
-                  src="./public/assets/LinkedIn.png"
-                  width="25"
-                  height="25"
-                  alt="LinkedIn"
-                />
-              </a>
-              <a href="https://twitter.com" target="_blank">
-                <img
-                  src="./public/assets/X.png"
-                  width="25"
-                  height="25"
-                  alt="Twitter"
-                />
-              </a>
-              <a href="https://www.youtube.com" target="_blank">
-                <img
-                  src="./public/assets/Youtube.svg"
-                  width="25"
-                  height="25"
-                  alt="YouTube"
-                />
-              </a>
+              <a href="https://www.facebook.com" target="_blank"><img src="./public/assets/Facebook.png" width="25" height="25" alt="Facebook" /></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="./public/assets/Instagram.png" width="25" height="25" alt="Instagram" /></a>
+              <a href="https://www.linkedin.com" target="_blank"><img src="./public/assets/LinkedIn.png" width="25" height="25" alt="LinkedIn" /></a>
+              <a href="https://twitter.com" target="_blank"><img src="./public/assets/X.png" width="25" height="25" alt="Twitter" /></a>
+              <a href="https://www.youtube.com" target="_blank"><img src="./public/assets/Youtube.svg" width="25" height="25" alt="YouTube"/></a>
             </div>
           </div>
   
-          <div class="flex flex-col gap-[16px] w-[120px]">
-            <a
-              href="./index.html"
-              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-            >
-              home
-            </a>
+          <div class="flex flex-col gap-[16px] w-[100px]">
+            <a href="./index.html" class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer">home</a>
             <a
               href="./product.html"
               class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
@@ -494,31 +451,42 @@
 
     <script>
       const counters = {
-        happyClients: 5000,
-        employees: 1000,
-        products: 300,
-        partners: 43,
+        happyClients: 900,
+        employees: 500,
+        products: 200,
+        partners: 300,
+      };
+      
+      const scrollThreshold = window.innerHeight * 0.5
+      let hasScrolled = false;
+
+      const updateCountersOnScroll = () => {
+        if (hasScrolled) return;
+        if (window.scrollY >= scrollThreshold) {
+          hasScrolled = true;
+
+          Object.keys(counters).forEach((key) => {
+            let count = 0;
+            const target = counters[key];
+            const element = document.getElementById(key);
+
+            const totalDuration = 2000;
+            const increment = target / (totalDuration / 16);
+
+            const updateCounter = () => {
+              if (count < target) {
+                count += increment;
+                if (count > target) count = target;
+                element.textContent = Math.floor(count);
+                requestAnimationFrame(updateCounter);
+              }
+            };
+            updateCounter();
+          });
+        }
       };
 
-      Object.keys(counters).forEach((key) => {
-        let count = 0;
-        const target = counters[key];
-        const element = document.getElementById(key);
-        console.log(element);
-
-        const increment = Math.ceil(target / 10000);
-
-        const updateCounter = () => {
-          if (count < target) {
-            count += increment;
-            if (count > target) count = target; // Ensure it doesn't exceed
-            element.textContent = count;
-            requestAnimationFrame(updateCounter);
-          }
-        };
-
-        updateCounter();
-      });
+      window.addEventListener('scroll', updateCountersOnScroll);
     </script>
 
     <script src="./scripts/main.js"></script>

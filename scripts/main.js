@@ -11,27 +11,6 @@ window.addEventListener("scroll", handleScroll);
 // about us status numbers
 
 
-
-// component fn
-// function loadSection(elementId, filePath) {
-//   fetch(filePath)
-//     .then((response) => {
-//       if (!response.ok) {
-//         throw new Error(`Failed to load ${filePath}`);
-//       }
-//       return response.text();
-//     })
-//     .then((html) => {
-//       document.getElementById(elementId).innerHTML = html;
-//     })
-//     .catch((error) => console.error(error));
-// }
-
-// loadSection("navigation", "../constants/nav.html");
-// loadSection("hero", "../home/hero.html");
-// loadSection("about", "../home/aboutus.html");
-// loadSection("products", "../home/products.html");
-
 /* handle nav bar btn */
 const NAVBAR = document.querySelector(".menu-bars");
 
@@ -39,12 +18,6 @@ NAVBAR.addEventListener("click", () => {
   const SID_EBAR_RESPONSIVE = document.querySelector(".side-bar-responsive");
   SID_EBAR_RESPONSIVE.classList.toggle("active");
 });
-
-/* career jop modle */
-
-
-// toggleModal(".apply-jop", ".overlay-modle-career", "flex");
-// toggleModal(".close-career-modle", ".overlay-modle-career", "none");
 
 // FAQ
 function toggleAnswer(element) {
@@ -61,11 +34,13 @@ function toggleAnswer(element) {
     element.style.borderRight = "1px solid #333";
     element.style.borderLeft = "1px solid #333";
     element.style.borderRadius = "8px 8px 0px 0px";
+    element.style.backgroundColor = "#3333330A"
   } else {
     ANSWER.classList.remove("visible");
     ANSWER.classList.add("hidden");
     ICON.src = "./public/icons/plus-icon.svg";
     element.style.border = "none";
+    element.style.backgroundColor = "#fff";
   }
 }
 

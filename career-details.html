@@ -156,12 +156,9 @@
           </div>
         </div>
 
-        <div
-          class="bg-white shadow rounded-lg box-border py-8 flex justify-center items-stretch flex-col mx-auto px-6 w-full max-w-[500px]"
-        >
+        <div class="bg-white shadow rounded-lg box-border py-8 flex justify-center items-stretch flex-col mx-auto px-6 w-full max-w-[500px]">
           <div class="flex justify-center items-stretch flex-col gap-4">
-            <div
-              class="location bg-[rgba(51,51,51,0.04)] box-border flex justify-between items-center flex-row gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full"
+            <div class="location bg-[rgba(51,51,51,0.04)] flex justify-center sm:justify-between flex-col sm:flex-row items-center flex-row gap-0 sm:gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full"
             >
               <div class="flex justify-start items-center flex-row">
                 <img
@@ -182,9 +179,7 @@
                 2464 Royal, New Jersey 45463
               </p>
             </div>
-            <div
-              class="calendar bg-[rgba(51,51,51,0.04)] box-border flex justify-between items-center flex-row gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full"
-            >
+            <div class="calendar bg-[rgba(51,51,51,0.04)] flex justify-center sm:justify-between flex-col sm:flex-row items-center flex-row gap-0 sm:gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full">
               <div class="flex justify-start items-center flex-row gap-2">
                 <img
                   src="./public/icons/calendar-icon.svg"
@@ -204,9 +199,7 @@
                 Full time
               </p>
             </div>
-            <div
-              class="salary bg-[rgba(51,51,51,0.04)] box-border flex justify-between items-center flex-row gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full"
-            >
+            <div class="salary bg-[rgba(51,51,51,0.04)] flex justify-center sm:justify-between flex-col sm:flex-row items-center flex-row gap-0 sm:gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full">
               <div class="flex justify-start items-center flex-row gap-2">
                 <img
                   src="./public/icons/salary-icon.svg"
@@ -226,8 +219,7 @@
                 7k - 12k
               </p>
             </div>
-            <div
-              class="time bg-[rgba(51,51,51,0.04)] box-border flex justify-between items-center flex-row gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full"
+            <div class="time bg-[rgba(51,51,51,0.04)] flex justify-center sm:justify-between flex-col sm:flex-row items-center flex-row gap-0 sm:gap-2 h-[61px] pl-4 pr-3 rounded-lg w-full"
             >
               <div class="flex justify-start items-center flex-row gap-2">
                 <img
@@ -249,9 +241,7 @@
               </p>
             </div>
           </div>
-          <button
-            class="apply-jop rounded border bg-transparent [font-family:Roboto,sans-serif] text-base font-medium text-[#166e1d] w-full max-w-[450px] h-[49px] block box-border mt-6 hover:bg-[#166e1d] hover:text-white border-solid border-[#166e1d]"
-          >
+          <button class="apply-jop rounded border bg-transparent [font-family:Roboto,sans-serif] text-base font-medium text-[#166e1d] w-full max-w-[450px] h-[49px] block box-border mt-6 hover:bg-[#166e1d] hover:text-white border-solid border-[#166e1d]">
             Apply Now
           </button>
         </div>
@@ -259,30 +249,15 @@
     </div>
 
     <!-- modle form jop -->
-    <div
-      class="overlay-modle-career z-50 fixed inset-0 bg-black bg-opacity-50 items-center justify-center"
-      style="display: none"
-    >
-      <div
-        class="formjop rounded-[15px] px-[40px] py-[30px] bg-[#FBFCF8] w-[675px] h-[700px] absolute top-[20px] shadow-2xl overflow-scroll"
-      >
-        <h1
-          class="[font-family:Montserrat,sans-serif] text-5xl font-bold text-left leading-[72px] uppercase text-[#333333]"
-        >
+    <div class="overlay-modle-career z-50 fixed inset-0 bg-black bg-opacity-50 items-center justify-center" style="display: none">
+      <div class="formjop rounded-[15px] px-[10px] sm:px-[40px] py-[30px] bg-[#FBFCF8] w-[300px] overflow-x-hidden md:w-[675px] h-[700px] absolute top-[20px] shadow-2xl overflow-scroll">
+        <h1 class="main-title [font-family:Montserrat,sans-serif] text-5xl font-bold text-left leading-[72px] uppercase text-[#333333]">
           Apply details<span class="text-[#ea5212]">.</span>
         </h1>
-        <form class="py-[32px] px-[24px] mt-[10px] flex flex-col gap-[32px]">
-          <div class="email flex flex-col gap-[16px]">
-            <label for="email" class="capitalize font-bold">email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="example@mail.com"
-              class="text-[#333] rounded-[2px] outline-none p-[12px] border border-[1px] border-solid border-[#333]"
-            />
-          </div>
-          <div class="flex justify-between gap-[16px]">
+        <form class="py-[32px] px-[10px] sm:px-[24px] mt-[10px] flex flex-col gap-[32px]">
+
+          <div class="flex flex-col md:flex-row justify-between gap-[16px]">
+            
             <div class="name flex flex-col gap-[16px] w-full">
               <label for="name" class="capitalize font-bold">name</label>
               <input
@@ -305,22 +280,38 @@
                 class="text-[#333] rounded-[2px] outline-none p-[12px] border border-[1px] border-solid border-[#333]"
               />
             </div>
+          
           </div>
-          <div class="cv flex flex-col gap-[16px] w-full relative">
-            <label for="cv" class="capitalize font-bold">cv</label>
+
+          <div class="email flex flex-col gap-[16px]">
+            <label for="email" class="capitalize font-bold">email</label>
             <input
-              type="cv"
-              name="cv"
-              id="cv"
-              placeholder="Upload your cv.."
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@mail.com"
               class="text-[#333] rounded-[2px] outline-none p-[12px] border border-[1px] border-solid border-[#333]"
             />
-            <button
-              class="rounded-[4px] px-[12px] w-[100px] py-[8px] bg-[#3333330A] font-bold gap-1 flex item-cenetr justify-center capitalize absolute top-[50%] right-2"
-            >
-              upload<img src="./public/icons/upload-icon.svg" alt="" />
-            </button>
           </div>
+
+          <div class="cv flex flex-col gap-[16px] w-full relative">
+            <label for="cv" class="capitalize font-bold text-[#333] mb-2">Upload CV</label>
+            <div class="flex items-center border border-[#333] rounded-[4px] bg-[#f9f9f9] p-2">
+              <input
+                type="file"
+                name="cv-upload"
+                id="cv-upload"
+                class="flex-1 cursor-pointer bg-transparent outline-none"
+                aria-label="Upload your CV"
+                accept=".pdf,.doc,.docx"
+              />
+              <label for="cv-upload" class="flex items-center justify-center cursor-pointer">
+                <img src="./public/icons/upload-icon.svg" alt="Upload Icon" class="w-6 h-6" />
+              </label>
+            </div>
+            <p class="text-[red] text-sm mt-1">*Accepted formats: PDF, DOC, DOCX</p> <!-- Added helper text -->
+          </div>
+          
           <div class="cover-letter flex flex-col gap-[16px] w-full relative">
             <label for="cover-letter" class="capitalize font-bold"
               >cover letter</label
@@ -347,10 +338,11 @@
     </div>
 
     <!-- footer -->
+    <!-- footer -->
     <section class="footer bg-[#333333] py-[64px]">
       <div class="w-11/12 md:w-4/5 m-auto">
         <div class="flex gap-[64px] flex-wrap ">
-          <div class="w-[530px] flex flex-col gap-[28px]">
+          <div class="w-[450px] flex flex-col gap-[28px]">
             <img src="./public/assets/image_5d73f37c.jpeg" width="70" height="50" alt="logo image" />
   
             <div class="address">
@@ -365,56 +357,16 @@
             </div>
   
             <div class="social-media-icons flex gap-[12px]">
-              <a href="https://www.facebook.com" target="_blank">
-                <img
-                  src="./public/assets/Facebook.png"
-                  width="25"
-                  height="25"
-                  alt="Facebook"
-                />
-              </a>
-              <a href="https://www.instagram.com" target="_blank">
-                <img
-                  src="./public/assets/Instagram.png"
-                  width="25"
-                  height="25"
-                  alt="Instagram"
-                />
-              </a>
-              <a href="https://www.linkedin.com" target="_blank">
-                <img
-                  src="./public/assets/LinkedIn.png"
-                  width="25"
-                  height="25"
-                  alt="LinkedIn"
-                />
-              </a>
-              <a href="https://twitter.com" target="_blank">
-                <img
-                  src="./public/assets/X.png"
-                  width="25"
-                  height="25"
-                  alt="Twitter"
-                />
-              </a>
-              <a href="https://www.youtube.com" target="_blank">
-                <img
-                  src="./public/assets/Youtube.svg"
-                  width="25"
-                  height="25"
-                  alt="YouTube"
-                />
-              </a>
+              <a href="https://www.facebook.com" target="_blank"><img src="./public/assets/Facebook.png" width="25" height="25" alt="Facebook" /></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="./public/assets/Instagram.png" width="25" height="25" alt="Instagram" /></a>
+              <a href="https://www.linkedin.com" target="_blank"><img src="./public/assets/LinkedIn.png" width="25" height="25" alt="LinkedIn" /></a>
+              <a href="https://twitter.com" target="_blank"><img src="./public/assets/X.png" width="25" height="25" alt="Twitter" /></a>
+              <a href="https://www.youtube.com" target="_blank"><img src="./public/assets/Youtube.svg" width="25" height="25" alt="YouTube"/></a>
             </div>
           </div>
   
-          <div class="flex flex-col gap-[16px] w-[120px]">
-            <a
-              href="./index.html"
-              class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
-            >
-              home
-            </a>
+          <div class="flex flex-col gap-[16px] w-[100px]">
+            <a href="./index.html" class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer">home</a>
             <a
               href="./product.html"
               class="[font-family:'Open_Sans',sans-serif] text-[18px] text-base font-normal leading-4 text-[#FBFCF8] cursor-pointer"
@@ -466,12 +418,16 @@
     </section>
 
     <script>
+      /* career jop modle */
       function toggleModal(buttonSelector, modalSelector, displayStyle) {
         const button = document.querySelector(buttonSelector);
         button.addEventListener("click", () => {
           document.querySelector(modalSelector).style.display = displayStyle;
         });
       }
+
+      toggleModal(".apply-jop", ".overlay-modle-career", "flex");
+      toggleModal(".close-career-modle", ".overlay-modle-career", "none");
     </script>
 
     <script src="./scripts/main.js"></script>
