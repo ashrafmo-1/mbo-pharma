@@ -3,38 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700"
-    />
-    <meta
-      name="description"
-      content="Discover the innovative solutions and services provided by MPO Pharma, dedicated to improving healthcare and patient outcomes."
-    />
-    <meta
-      name="keywords"
-      content="MPO Pharma, healthcare, patient outcomes, innovative solutions, medical services, pharmaceutical company, medical research, drug development, clinical trials, health technology, patient care, medical innovation, healthcare solutions, pharmaceutical services, medical advancements, healthcare industry"
-    />
-    <meta name="author" content="ashraf" />
-    <meta property="og:title" content="Title for Open Graph" />
-    <meta
-      property="og:description"
-      content="Discover the innovative solutions and services provided by MPO Pharma, dedicated to improving healthcare and patient outcomes."
-    />
-    <meta property="og:image" content="https://www.example.com/image.jpg" />
-    <meta property="og:url" content="https://www.example.com/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Title for Twitter" />
-    <meta name="twitter:description" content="Description for Twitter" />
-    <meta name="twitter:image" content="https://www.example.com/image.jpg" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700" />
+    <meta name="description" content="Discover the innovative solutions and services provided by MPO Pharma, dedicated to improving healthcare and patient outcomes." />
+    <meta name="keywords" content="MPO Pharma, healthcare, patient outcomes, innovative solutions, medical services, pharmaceutical company, medical research, drug development, clinical trials, health technology, patient care, medical innovation, healthcare solutions, pharmaceutical services, medical advancements, healthcare industry" />
+    <meta name="author" content="mbo pharma" />
     <!-- styles -->
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="shortcut icon" href="./public/assets/image_5d73f37c.jpeg" type="image/x-icon" />
@@ -364,11 +338,11 @@
               >
                 Qui veritatis quo non nostrum eveniet consequatur
               </p>
-              <p
+              <a href="./blog-details.html"
                 class="[font-family:Roboto,sans-serif] text-lg font-normal text-[#166e1d] mt-3 m-0 p-0"
               >
                 Read more
-              </p>
+              </a>
             </div>
           </div>
           <div class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col rounded-lg">
@@ -440,11 +414,11 @@
               >
                 Qui veritatis quo non nostrum eveniet consequatur
               </p>
-              <p
+              <a href="./blog-details.html"
                 class="[font-family:Roboto,sans-serif] text-lg font-normal text-[#166e1d] mt-3 m-0 p-0"
               >
                 Read more
-              </p>
+              </a>
             </div>
           </div>
           <div class="bg-[rgba(51,51,51,0.04)] relative box-border flex justify-start items-stretch flex-col rounded-lg">
@@ -478,11 +452,11 @@
               >
                 Qui veritatis quo non nostrum eveniet consequatur
               </p>
-              <p
+              <a href="./blog-details.html"
                 class="[font-family:Roboto,sans-serif] text-lg font-normal text-[#166e1d] mt-3 m-0 p-0"
               >
                 Read more
-              </p>
+              </a>
             </div>
           </div>
         </div>
@@ -610,43 +584,44 @@
     <script src="./scripts/main.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow", // التأثير الافتراضي
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
-  slidesPerView: 3,
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 200, // تأثير أكثر وضوحاً
-    modifier: 1,
-    slideShadows: false, // تعطيل الظلال
-  },
-  breakpoints: {
-    640: {
-      effect: "slide", // تغيير التأثير للموبايل
-      slidesPerView: 1, // عرض شريحة واحدة في الموبايل
-    },
-    768: {
-      effect: "coverflow", // العودة لتأثير coverflow للشاشات المتوسطة
-      slidesPerView: 2, // عرض شريحتين
-      coverflowEffect: {
-        rotate: 40, // تأثير متوسط للشاشات المتوسطة
-        depth: 150, // عمق متوسط
-      },
-    },
-    1280: {
-      slidesPerView: 3, // عرض 3 شرائح للشاشات الكبيرة
-    },
-  },
-  navigation: {
-    nextEl: '.next-btn',
-    prevEl: '.prev-btn',
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
+        effect: "coverflow",
+        // grabCursor: true,
+        // centeredSlides: true,
+        // loop: true,
+        slidesPerView: 3,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: .8,
+          slideShadows: false, // تعطيل الظلال
+        },
+        breakpoints: {
+          640: {
+            effect: "slide", // تغيير التأثير للموبايل
+            slidesPerView: 1, // عرض شريحة واحدة في الموبايل
+          },
+          768: {
+            effect: "coverflow", // العودة لتأثير coverflow للشاشات المتوسطة
+            slidesPerView: 2, // عرض شريحتين
+            coverflowEffect: {
+              rotate: 40, // تأثير متوسط للشاشات المتوسطة
+              depth: 150, // عمق متوسط
+            },
+          },
+          1280: {
+            slidesPerView: 3, // عرض 3 شرائح للشاشات الكبيرة
+          },
+        },
+        navigation: {
+          nextEl: '.next-btn',
+          prevEl: '.prev-btn',
+          disabledClass: 'swiper-button-disabled',
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
 
     </script>
     <script>
